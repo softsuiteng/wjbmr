@@ -1,0 +1,10 @@
+{{ $names := split . " " }}
+
+{{ $length := len $names }}
+
+<span>
+  {{ (index (last 1 $names) 0 | lower) | title }},
+  {{ range first (sub $length 1) $names }}    
+    {{ substr . 0 1 | title }}.
+  {{ end }}
+</span>

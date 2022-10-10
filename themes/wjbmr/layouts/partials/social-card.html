@@ -1,0 +1,28 @@
+{{- $url := .Permalink -}}
+{{- $base := .Site.BaseURL -}}
+{{- $isPage := .IsPage -}}
+{{- $date := .Date.Format "2006-01-02" -}}
+{{ with .Params.social }}
+    {{ with .creator -}}<meta name="twitter:creator" content="{{- . -}}">{{- end }}
+    <meta name="twitter:card" content="{{- .card -}}">
+    <meta name="twitter:site" content="{{- .site -}}">
+    <meta name="twitter:image:alt" content="{{- .title -}}">
+    <meta property="og:site_name" content="World Journal of Biomedical Research">
+    <meta property="og:title" content="{{- .title -}}">
+    {{ if (and .image .static_image) -}}    
+    <meta property="og:image" content="{{- $base -}}images/{{- .image -}}">
+    {{ else if .image -}}
+    <!-- <meta property="og:image" content="{{- $url -}}{{- .image -}}"> -->
+    <meta property="og:image" content="{{- $base -}}{{- .image -}}">
+    {{ else }}
+    <meta property="og:image" content="{{- $base -}}/images/placeholder.png">
+    {{- end }}
+    <meta property="og:description" content="{{- .description -}}">
+    <meta property="og:url" content="{{- $url -}}">
+    {{ if $isPage }}
+    <meta property="og:type" content="article">
+    <meta property="article:published_time" content="{{ $date }}">
+    {{ else }}
+    <meta property="og:type" content="website">
+    {{ end }}
+{{- end }}

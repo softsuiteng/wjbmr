@@ -1,0 +1,17 @@
+{{ partial "head.html" . }} 
+
+{{ partial "header.html" . }}
+
+<main role="main" class="search_page" >
+  {{ .Content }}
+
+  <h5 id="query-text" class="search-term"></h5>
+  
+  <ul id="results">
+      <li>
+          Enter a keyword above to search this site.
+      </li>
+  </ul>
+</main>
+
+{{ partial "footer.html" . }}

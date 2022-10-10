@@ -1,0 +1,25 @@
+{{ $publications := where .Site.Pages "Section" "articles" }}
+{{ $publications := $publications | union (where .Site.Pages "Section" "publications") }}
+
+<script>
+  window.store = {
+      {{ range $publications }}
+      // For all pages in your site, use "range .Site.Pages"
+      // You can use any unique identifier here
+      "{{ .Permalink }}": {
+          // You can customize your searchable fields using any .Page parameters
+          "title": "{{ .Title  }}",
+          "section": "{{ .Section  }}",
+          "publication": "volume {{ .Params.volume  }}, issue {{ .Params.issue  }}",
+          "authors": [{{ range .Params.Authors }}" {{ (. | lower) | title }}",{{ end }}],
+          "keywords": [{{ range .Params.Keywords }}" {{ . }}",{{ end }}],
+          "content": {{ .Content | plainify }}, // Strip out HTML tags
+          "url": "{{ .Permalink }}"
+      },
+      {{ end }}
+  }
+  </script>
+  <!-- Include Lunr and code for your search function,
+  which you'll write in the next section -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/js/search.js"></script>

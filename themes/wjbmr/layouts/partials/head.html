@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="{{ if eq .Description "" }}{{ .Params.title }}{{ else }}{{ .Description }}{{ end }}">
+    
+    {{- with $.Param "keywords" }} <meta name="keywords" content="{{ delimit . "," }}"> {{- end }}
+
+    <!-- Fix for index page -->
+    {{- with $.Param "pointwords" }} 
+    <meta name="keywords" content="{{ delimit .    "," }}"> 
+    {{- end }}
+    
+    {{- with $.Param "authors" }} 
+    <meta name="author"  content="{{ delimit . "," }}"> 
+    {{- end }} 
+    
+    {{ partial "social-card" . }}
+
+    <meta name="theme-color" content="#0072bb" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;1,400;1,500&family=Hind:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.9.0/css/lightgallery.min.css" integrity="sha512-gk6oCFFexhboh5r/6fov3zqTCA2plJ+uIoUx941tQSFg6TNYahuvh1esZVV0kkK+i5Kl74jPmNJTTaHAovWIhw==" crossorigin="anonymous" /> -->
+    <link rel="stylesheet" href="{{ "css/main.min.css" | absURL }}" type="text/css"> 
+    {{/*  <link rel="stylesheet" href="{{ "css/wjbmr.min.css" | absURL }}" type="text/css">   */}}
+    <link rel="alternate" href="{{ "index.xml" | absURL }}" type="application/rss+xml" title="{{ .Site.Title }}"> 
+    <link rel="shortcut icon" href="{{ "favicon.ico" | absURL }}" type="image/x-icon">
+    <title>
+      {{ with .Title }}{{ . | title }}{{ end }} {{ with .Params.section }}
+      &middot; {{ humanize . | title }}{{ end }} &middot; {{ .Site.Title }}
+    </title>
+
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    /> -->
+    <!-- <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> -->
+
+    <!-- <script>
+  window.onload = (event) => {
+    document.getElementById('loading').remove();
+  };
+</script> -->
+  </head>
+  <body>
+    <!-- <div id="loading">
+    <h1>AKSU<br/>JOMAS</h1>
+   
+    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+  </div> -->

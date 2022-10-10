@@ -1,0 +1,53 @@
+ <nav class="section-paginator">
+    {{ with .PrevInSection }}
+    <a class="paginator-link" href="{{ .Permalink }}" alt="Previous article: {{ .Title }}">
+        <div>
+            <h5>{{ .Title }}</h5> 
+            
+            {{ with .Params.keywords }}  
+                <p style="line-height: 1.2;">
+                    {{ range .}}
+                        <span class="keyword">{{ humanize . | title }}</span>
+                    {{end}}
+                </p> 
+            {{ end }}
+
+            <p>
+                {{ partial "article/authors.html" . }} 
+                <small style="white-space: nowrap;">
+                    &mdash;
+                    volume {{ .Params.volume }}, issue {{ .Params.issue }}
+                </small>
+            </p>
+
+        </div>
+    </a>
+    {{ end }}
+
+    {{ with .NextInSection }}
+    <a class="paginator-link" href="{{ .Permalink }}" alt="Next article: {{ .Title }}">
+        <div>
+            <h5>{{ .Title }}</h5>
+            
+            {{ with .Params.keywords }}
+                <p style="line-height: 1;">
+                    {{ range .}}
+                        <span class="keyword">{{ humanize . | title }}</span>
+                    {{end}}
+                </p>  
+            {{ end }}
+
+            <p>
+                {{ partial "article/authors.html" . }}
+                <small style="white-space: nowrap;">
+                    &mdash;
+                    volume {{ .Params.volume }}, issue {{ .Params.issue }}
+                </small>
+            </p>            
+        </div>
+    </a>
+    {{ end }}
+</nav>
+
+
+<!-- {{ partial "taxonomies.html" . }} -->

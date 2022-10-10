@@ -1,0 +1,72 @@
+{{ $issues := (where $.Site.RegularPages "Section" "published") }} 
+{{ $paginator := .Paginate $issues (or .Site.Params.paginate 10) }} 
+
+{{ partial "head.html" .  }} 
+
+{{ partial "header.html" . }}
+
+<main role="main" class="archives_page">
+  <section>
+    <h2>Issues Published</h2>
+    <div class="articles mb-15">
+      <ul>
+        {{ range $paginator.Pages }}
+        <li class="mb-2">
+          <a href="{{ .Permalink }}" title="{{ .Title }}">
+            <h5 style="display: inline-block; margin: 0">
+              {{ .Title }}
+              <small class="text-muted small mark">
+                {{len (
+                  (where $.Site.RegularPages "Section" "articles") 
+                  | intersect (where .Site.RegularPages "Params.volume" .Params.volume) 
+                  | intersect (where .Site.RegularPages "Params.issue" .Params.issue)
+                  ) }} articles
+              </small>
+            </h5>
+
+
+          </a>
+          <p>Published {{ dateFormat "January, 2006" .Date }}</p>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+
+    {{ partial "paginator.html" $paginator }}
+  </section>
+
+  <aside>
+    <h4>About</h4>
+    <p class="site-description">
+      {{ .Site.Data.Globals.Description | markdownify }}
+    </p>
+    <a
+      class="btn btn-outline-success text-uppercase"
+      href="/guidelines"
+      title="Read submission guidelines"
+      >Submitting an Article</a
+    >
+
+    <h4>Browse Articles</h4>
+    <ul style="list-style: none">
+      <li class="mb-2">
+        <a
+          class="btn btn-outline-dark"
+          href="/authors"
+          title="Browse articles by authors"
+          >By Authors</a
+        >
+      </li>
+      <li class="mb-2">
+        <a
+          class="btn btn-outline-dark"
+          href="/keywords"
+          title="Browse articles by keywords"
+          >By Keywords</a
+        >
+      </li>
+    </ul>
+  </aside>
+</main>
+
+{{ partial "footer.html" . }}

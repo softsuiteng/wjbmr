@@ -1,0 +1,30 @@
+{{ $issues := (where $.Site.RegularPages "Section" "publications") }} {{
+$paginator := .Paginate $issues (or .Site.Params.paginate 10) }} {{ partial
+"head.html" . }} {{ partial "header.html" . }}
+
+<main role="main" class="archives_page">
+  <section>
+    <h2>Other Publications</h2>
+    <div class="articles mb-15">
+      <ul>
+        {{ range $paginator.Pages }}
+        <li class="mb-2">{{ partial "article/list-item.html" . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+
+    {{ partial "paginator.html" $paginator }}
+  </section>
+
+  <aside>
+    <h4>About</h4>
+    <p class="site-description">
+      {{ .Site.Data.Globals.Description | markdownify }}
+    </p>
+    <a class="btn btn-success" href="/guidelines" title="Submit article"
+      >Submit Article</a
+    >
+  </aside>
+</main>
+
+{{ partial "footer.html" . }}

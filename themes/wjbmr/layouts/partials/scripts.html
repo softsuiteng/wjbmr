@@ -1,0 +1,140 @@
+{{/*  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"
+  integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+></script>  */}}
+{{/*  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>  */}}
+{{/*  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>  */}}
+{{/*  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>  */}}
+<!-- <script src="{{ "js/lg.js" | absURL }}"></script>
+<script src="{{ "js/main.js" | absURL }}"></script> -->
+<!-- <script src="{{ "js/main.js" | absURL }}"></script> -->
+
+<script>
+  // AOS.init({
+  //   once: true,
+  //   duration: 200,
+  // });
+
+  // var openMenu = document.getElementById("navToggle");
+  // var tl = gsap.timeline();
+
+  // tl.to(".navigation", {
+  //   opacity: 1,
+  //   x: 0,
+  //   scale: 1,
+  //   pointerEvents: "auto",
+  //   duration: 0.3,
+  // });
+  // tl.to(".stagger", { x: 0, opacity: 1, stagger: 0.2 }, "-=.3");
+  // tl.pause();
+
+  // openMenu &&
+  // openMenu.addEventListener("change", function () {
+  //   if (this.checked) {
+  //     tl.play();
+  //     document.body.style.overflowY = "hidden"; //****
+  //   } else {
+  //     tl.reverse();
+  //     document.body.style.overflowY = "auto"; //****
+  //   }
+  // });
+
+  const navButton = document.querySelector(".navigation button");
+  const navigation = document.querySelector(".navigation");
+
+  navButton.addEventListener('click', function(){
+    navigation.classList.toggle('show');
+  });
+
+  let ticking = false;
+  let lastKnownScrollPosition = 0;
+  const scrollButton = document.querySelector("#back-to-top");
+
+  function showScrollTop(scrollPos) {
+    if(!scrollButton) return;
+    if (scrollPos > 600) {
+      scrollButton.classList.add("show");
+    } else {
+      scrollButton.classList.remove("show");
+    }
+  }
+
+  scrollButton && 
+  scrollButton.addEventListener("click", () => {
+    history.replaceState({}, document.title, window.location.href.split("#")[0]);
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  });
+
+  window.addEventListener("scroll", function (e) {
+    lastKnownScrollPosition = window.scrollY;
+
+    if (!ticking) {
+      window.requestAnimationFrame(function () {
+        showScrollTop(lastKnownScrollPosition);
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+</script>
+
+
+<!-- <script>
+  jQuery(document).ready(function ($) {
+    $(".hero").slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      fade: !0,
+      cssEase: "linear",
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 5000,
+      draggable: false,
+      arrows: false,
+      cursor: 'hand',
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+          },
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            dots: false,
+            draggable: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: { 
+            dots: false,
+            slidesToShow: 1,
+            draggable: true,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            dots: false,
+            slidesToShow: 1,
+            draggable: true,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  });
+</script> -->

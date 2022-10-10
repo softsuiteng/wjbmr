@@ -1,0 +1,17 @@
+baseURL = 'http://example.org/'
+title = 'World Journal of Biomedical Research'
+languageCode = 'en-us'
+relativeURLs =  true
+
+theme = 'wjbmr'
+
+pluralizeListTitles = false 
+preserveTaxonomyNames = true
+
+[permalinks]
+  issues = ':section/:06/:01/'
+  articles = ':section/:06/:01/:title/'
+
+[taxonomies]
+  author = "authors"
+  keyword = "keywords"

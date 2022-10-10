@@ -1,0 +1,29 @@
+{{ partial "head.html" . }}
+
+{{ partial "header.html" . }}
+
+{{ $baseurl := .Site.BaseURL }}
+{{ $paginator := .Paginate (where .Data.Pages "Section" "articles") (or .Site.Params.paginate 5) }}
+
+<main role="main" class="keywords-list">
+
+  <h2 class="list-title">Articles by keyword</h2>
+
+  {{ with .Site.Taxonomies.keywords }} 
+    <ul class="keywords">
+      {{ range $name, $value := . }}
+        <li>        
+          <a class="category"
+              href="{{ $baseurl }}keywords/{{ $name | urlize }}"
+              >
+              <span>{{ humanize $name | title }} ({{ .Count }})</span>
+              <!-- <span>{{ humanize $name | title }} ({{ .Count }} {{ if gt .Count 1}}articles{{ else }}article{{ end }})</span> -->
+          </a>        
+        </li>
+      {{ end }}
+    </ul>
+  {{ end }}
+</main>
+
+{{ partial "paginator.html" $paginator }}
+{{ partial "footer.html" . }}

@@ -1,0 +1,35 @@
+{{ $baseurl := .Site.BaseURL }}
+{{ $paginator := .Paginate .Data.Pages (or .Site.Params.paginate 5) }}
+
+{{ partial "head.html" . }}
+
+{{ partial "header.html" . }}
+
+{{ $title := humanize .Title | title }}
+
+<main role="main" class="article-list">
+  <div class="meta">
+      <a href="{{ $baseurl }}keywords"><span class="material-icons"> chevron_left </span> Keywords</a>
+      <span class="val">      
+        / {{ $title }}    
+      </span>
+  </div>
+
+  <h2 class="taxonomy-title"><small class="text-uppercase">Keyword:</small> {{ $title }}</h2>
+
+  <!-- <div style="margin-bottom: 3em;">{{ .Content }}</div>   -->
+
+  <div class="content">    
+    <div class="articles">
+      {{ range $paginator.Pages }}
+        {{ partial "issues/list-item.html" . }}
+      {{ end }}
+    </div>
+    {{ partial "paginator.html" $paginator }}
+    <hr>
+    {{ partial "taxonomies.html" . }}
+  </div>
+</main>
+
+
+{{ partial "footer.html" . }}

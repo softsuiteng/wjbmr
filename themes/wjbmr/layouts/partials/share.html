@@ -1,0 +1,256 @@
+{{ $pageurl := .Page.Permalink }} {{ $siteurl := .Site.BaseURL }}
+
+<style>
+  #share {
+    margin-top: 2em;
+    margin-bottom: 4em;
+  }
+
+  #share-buttons {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -7px;
+    margin-left: -4px;
+    display: flex;
+  }
+  #share-buttons:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  #share-buttons > div {
+    position: relative;
+  }
+
+  #share-buttons > div {
+    margin: 0.25em;
+    padding: 0.125em 0.2em;
+    border-radius: 1.5em;
+    /* border: 3px solid #dddddd; */
+    background-color: #f7f7f7;
+    /* background-color: #c3d6f0;     */
+    transition: all 200ms ease-out;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 2px rgba(0, 0, 0, 0.23);
+  }
+
+  #share-buttons > div > svg {
+    height: 16px;
+    width: 36px;
+    padding: 0.2em;
+    fill: #888888;
+    fill: #2b253b;
+    margin: 5px auto;
+    /* margin-right: 0.8em; */
+  }
+
+  #share-buttons > div:hover {
+    cursor: pointer;
+    background-color: transparent;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+  #share-buttons > div.facebook:hover > svg {
+    fill: #3b5998;
+  }
+  #share-buttons > div.twitter:hover > svg {
+    fill: #55acee;
+  }
+  #share-buttons > div.linkedin:hover > svg {
+    fill: #0077b5;
+  }
+  #share-buttons > div.pinterest:hover > svg {
+    fill: #cb2027;
+  }
+  #share-buttons > div.gplus:hover > svg {
+    fill: #dd4b39;
+  }
+  #share-buttons > div.mail:hover > svg {
+    fill: #e98a15;
+  }
+  #share-buttons > div.instagram:hover > svg {
+    fill: #c73b92;
+  }
+  #share-buttons > div.generic:hover > svg {
+    fill: #0072bb;
+  }
+  #share-buttons > div.whatsapp:hover > svg {
+    fill: #11cc21;
+  }
+
+  #share-buttons > div.facebook > svg {
+    height: 25px;
+    margin-top: 9px;
+  }
+  #share-buttons > div.twitter > svg {
+    height: 27px;
+    margin-top: 8px;
+  }
+  #share-buttons > div.linkedin > svg {
+    height: 26px;
+    margin-top: 7px;
+  }
+  #share-buttons > div.pinterest > svg {
+    height: 27px;
+    margin-top: 9px;
+  }
+  #share-buttons > div.gplus > svg {
+    height: 24px;
+    margin-top: 9px;
+    position: relative;
+    left: 1px;
+  }
+  #share-buttons > div.mail > svg {
+    height: 23px;
+    margin-top: 9px;
+  }
+  #share-buttons > div.generic {
+    display: none;
+  }
+  #share-buttons > div.generic > svg {
+    height: 23px;
+    margin-top: 9px;
+  }
+  #share-buttons > div.whatsapp {
+    display: none;
+  }
+  #share-buttons > div.whatsapp > svg {
+    height: 23px;
+    margin-top: 9px;
+  }
+
+  #share-buttons > div.facebook:hover {
+    border-color: #3b5998;
+  }
+  #share-buttons > div.twitter:hover {
+    border-color: #55acee;
+  }
+  #share-buttons > div.linkedin:hover {
+    border-color: #0077b5;
+  }
+  #share-buttons > div.pinterest:hover {
+    border-color: #cb2027;
+  }
+  #share-buttons > div.gplus:hover {
+    border-color: #dd4b39;
+  }
+  #share-buttons > div.mail:hover {
+    border-color: #e98a15;
+  }
+  #share-buttons > div.generic:hover {
+    border-color: #0072bb;
+  }
+  #share-buttons > div.whatsapp:hover {
+    border-color: #11cc21;
+  }
+
+  @media screen and (max-width: 50em) {
+    #share-buttons > div {
+      padding: 0.075em 0.2em;
+    }
+  }
+</style>
+
+<div id="share">
+  <!-- <span style="color: #50514F; font-size: 1.2em;">Share on: </span> -->
+  <div id="share-buttons">
+    <div id="generic-share" class="generic" title="Share this article">
+      <svg
+        fill="#000000"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 50 50"
+        width="50px"
+        height="50px"
+      >
+        <path
+          d="M 40 0 C 34.535156 0 30.078125 4.398438 30 9.84375 C 30 9.894531 30 9.949219 30 10 C 30 13.6875 31.996094 16.890625 34.96875 18.625 C 36.445313 19.488281 38.167969 20 40 20 C 45.515625 20 50 15.515625 50 10 C 50 4.484375 45.515625 0 40 0 Z M 28.0625 10.84375 L 17.84375 15.96875 C 20.222656 18.03125 21.785156 21 21.96875 24.34375 L 32.3125 19.15625 C 29.898438 17.128906 28.300781 14.175781 28.0625 10.84375 Z M 10 15 C 4.484375 15 0 19.484375 0 25 C 0 30.515625 4.484375 35 10 35 C 12.050781 35 13.941406 34.375 15.53125 33.3125 C 18.214844 31.519531 20 28.472656 20 25 C 20 21.410156 18.089844 18.265625 15.25 16.5 C 13.71875 15.546875 11.929688 15 10 15 Z M 21.96875 25.65625 C 21.785156 28.996094 20.25 31.996094 17.875 34.0625 L 28.0625 39.15625 C 28.300781 35.824219 29.871094 32.875 32.28125 30.84375 Z M 40 30 C 37.9375 30 36.03125 30.644531 34.4375 31.71875 C 31.769531 33.515625 30 36.542969 30 40 C 30 40.015625 30 40.015625 30 40.03125 C 29.957031 40.035156 29.917969 40.058594 29.875 40.0625 L 30 40.125 C 30.066406 45.582031 34.527344 50 40 50 C 45.515625 50 50 45.515625 50 40 C 50 34.484375 45.515625 30 40 30 Z"
+        />
+      </svg>
+    </div>
+    <div
+      class="facebook"
+      title="Share this article on Facebook"
+      onclick="window.open('http://www.facebook.com/share.php?u={{ $pageurl }}');"
+    >
+      <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z"
+        />
+      </svg>
+    </div>
+    <div
+      class="twitter"
+      title="Share this article on Twitter"
+      onclick="window.open('http://twitter.com/home?status={{ $pageurl }}');"
+    >
+      <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"
+        />
+      </svg>
+    </div>
+    <div
+      class="linkedin"
+      title="Share this article on Linkedin"
+      onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url={{ $pageurl }}&title=&summary=&source=');"
+    >
+      <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"
+        />
+      </svg>
+    </div>
+    <div
+      class="mail"
+      title="Share this article through Email"
+      onclick="window.open('mailto:?&body={{ $pageurl }}');"
+    >
+      <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z"
+        />
+      </svg>
+    </div>
+    <div
+      id="whatsapp-share"
+      class="whatsapp"
+      title="Share this on WhatsApp"
+      onclick="window.open('whatsapp://send?text={{ .Title }} {{ $pageurl }}');"
+    >
+      <svg
+        fill="#000000"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 50 50"
+        width="50px"
+        height="50px"
+      >
+        <path
+          d="M25,2C12.318,2,2,12.318,2,25c0,3.96,1.023,7.854,2.963,11.29L2.037,46.73c-0.096,0.343-0.003,0.711,0.245,0.966 C2.473,47.893,2.733,48,3,48c0.08,0,0.161-0.01,0.24-0.029l10.896-2.699C17.463,47.058,21.21,48,25,48c12.682,0,23-10.318,23-23 S37.682,2,25,2z M36.57,33.116c-0.492,1.362-2.852,2.605-3.986,2.772c-1.018,0.149-2.306,0.213-3.72-0.231 c-0.857-0.27-1.957-0.628-3.366-1.229c-5.923-2.526-9.791-8.415-10.087-8.804C15.116,25.235,13,22.463,13,19.594 s1.525-4.28,2.067-4.864c0.542-0.584,1.181-0.73,1.575-0.73s0.787,0.005,1.132,0.021c0.363,0.018,0.85-0.137,1.329,1.001 c0.492,1.168,1.673,4.037,1.819,4.33c0.148,0.292,0.246,0.633,0.05,1.022c-0.196,0.389-0.294,0.632-0.59,0.973 s-0.62,0.76-0.886,1.022c-0.296,0.291-0.603,0.606-0.259,1.19c0.344,0.584,1.529,2.493,3.285,4.039 c2.255,1.986,4.158,2.602,4.748,2.894c0.59,0.292,0.935,0.243,1.279-0.146c0.344-0.39,1.476-1.703,1.869-2.286 s0.787-0.487,1.329-0.292c0.542,0.194,3.445,1.604,4.035,1.896c0.59,0.292,0.984,0.438,1.132,0.681 C37.062,30.587,37.062,31.755,36.57,33.116z"
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+
+<script>
+  const shareData = {
+    title: "wjbmr",
+    text: "{{ .Title }}",
+    url: "{{ $pageurl }}",
+  };
+
+  const genericShareButton = document.querySelector("#generic-share");
+
+  if (navigator.canShare && navigator.canShare(shareData)) {
+    genericShareButton.style.display = "inline-block";
+
+    genericShareButton.addEventListener("click", async () => {
+      await navigator.share(shareData);
+    });
+  }
+
+  const isMobileDevice = /Mobi/i.test(window.navigator.userAgent);
+  const whatsAppShareButton = document.querySelector("#whatsapp-share");
+
+  if (isMobileDevice) {
+    whatsAppShareButton.style.display = "inline-block";
+  }
+</script>

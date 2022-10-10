@@ -1,0 +1,61 @@
+{{ $orderedArticles := ((((where $.Site.RegularPages "Section" "articles").ByParam "issue").Reverse.ByParam "volume")).ByParam "publishing.position" }}
+{{ $paginator := .Paginate $orderedArticles (or .Site.Params.paginate 10) }}
+{{ $recent := first 5 $orderedArticles }}
+
+{{ partial "head.html" . }} 
+
+{{ partial "header.html" . }}
+
+<main role="main" class="archives_page" >
+  <section>
+    <h2>Journal Archives</h2>
+    <div class="articles">
+      <ul>
+        {{ range $paginator.Pages }}
+        <li>
+          {{ partial "issues/list-item.html" . }}
+        </li>
+        {{ end }}
+      </ul>      
+    </div>
+
+    {{ partial "paginator.html" $paginator }}
+  </section>
+
+
+
+  <aside>
+    <h4>About</h4>
+    <p class="summary">
+      {{ .Params.summary }}
+    </p>
+    <a class="btn btn-primary" href="/guidelines" title="Submit article">Submit Article</a>
+
+    <!-- Todo: Show recent news update here. -->
+    <!-- <h4>News Update</h4> -->
+
+
+    <h4>Newest Articles</h4>
+    <div class="articles">      
+      <ul>
+        {{ range $recent }}
+          <li style="line-height: 1.5; margin-bottom: 0.5em;">
+            <a href="{{ .RelPermalink }}" title="{{ .Title }}">
+              {{ .Title }}
+            </a>
+            <br>
+            <small>
+              {{ partial "article/authors.html" . }}
+            </small>
+          </li>
+        {{ end }}
+      </ul>
+      <p class="ml-3">
+        <a href="/volumes" class="btn btn-warning">More articles</a>
+      </p>
+    </div>
+  </aside>
+
+</main>
+
+{{ partial "footer.html" . }}

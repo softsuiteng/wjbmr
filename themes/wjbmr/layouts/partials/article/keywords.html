@@ -1,0 +1,10 @@
+{{ if gt .Params.keywords 0 }}
+<span>
+  <strong>Keywords:</strong> 
+  {{ with .Params.keywords }}  
+    {{ range .}}
+      <a class="tag category" href="/keywords/{{ . | urlize }}">{{ . | title }}</a>
+    {{end}}
+  {{ end }}
+</span>
+{{ end }}

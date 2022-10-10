@@ -1,0 +1,35 @@
+{{ $articlesCount := len (where $.Site.RegularPages "Section" "articles") }}
+{{ $authorsCount := len (.Site.Taxonomies.authors) }}
+{{ $keywordsCount := len (.Site.Taxonomies.keywords) }}
+{{ $baseurl := .Site.BaseURL }}
+{{ partial "head.html" . }} 
+
+{{ partial "header.html" . }}
+
+<main role="main" class="archives_page" >
+ <section>
+  <h2>Articles</h2>
+
+
+  <p>
+    At present there are {{ $articlesCount }} articles published on this website, written by 
+    <a href="{{ $baseurl }}authors">{{ $authorsCount }} authors</a> and having 
+    <a href="{{ $baseurl }}keywords">{{ $keywordsCount }} keywords</a>.
+  </p>
+
+  <a class="btn btn-warning" href="{{ "/volumes" | absURL }}" title="Archives">
+    Browse archives for more articles
+  </a>
+ </section>
+
+
+  <aside>
+    <h4>About</h4>
+    <p class="site-description">
+      {{ .Site.Data.Globals.Description | markdownify }}
+    </p>
+    <a class="btn btn-success" href="/guidelines" title="Submit article">Submit Article</a>
+  </aside>
+</main>
+
+{{ partial "footer.html" . }}

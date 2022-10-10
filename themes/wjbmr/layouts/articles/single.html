@@ -1,0 +1,116 @@
+{{ partial "head.html" . }} {{ partial "header.html" . }}
+
+<main role="main" itemscope itemtype="https://schema.org/ScholarlyArticle" class="article_page">
+  <article>
+    <a
+      href="/published/{{.Params.volume}}-{{.Params.issue | urlize}}"
+      class="btn btn-sm btn-outline-secondary"
+    >
+      &sext; Other articles in this issue
+    </a>
+
+    <h1 itemprop="name" class="mt-4">{{ .Title }}</h1>
+
+    <p style="margin: 1.2em 0 2.5em">
+      <a
+        download="{{ .Title }}"
+        class="download-btn"
+        title="Download: {{ .Title }}"
+        href="./{{ .Params.file }}"
+      >
+        {{/*  Download {{ index .Params.categories 0 }}  */}}
+        Download PDF
+        <span class="material-icons"> picture_as_pdf </span>
+      </a>
+    </p>
+
+    <h3>Abstract</h3>
+    <div itemprop="abstract" class="abstract">{{ .Content }}</div>
+
+    <hr style="margin: 3em 0 2.5em" />
+
+    <h3>Read more</h3>
+    {{ partial "paginate.html" . }}
+  </article>
+
+  <aside>
+    <h4>Meta</h4>
+    <p class="meta">
+      <span class="item">
+        <strong>
+          {{ if gt (len .Params.authors) 1 }} Authors: {{ else }} Author: {{ end
+          }}
+        </strong>
+        <span itemprop="author">
+          {{ partial "article/authors.html" . }}
+        </span>
+      </span>
+      <span class="item"> {{ partial "article/keywords.html" . }} </span>
+
+
+      <div itemprop="isPartOf" itemscope itemtype="https://schema.org/PublicationIssue" itemid="#issue">
+        <span itemscope itemtype="https://schema.org/Periodical" itemid="#periodical" class="text-muted sr-only">
+          <span itemprop="name">Cataloging &amp; Classification: Bi-annually</span>
+        </span>
+        <span itemprop="datePublished">{{ .PublishDate.Format "2006" }}</span>,
+        Vol.<span itemprop="isPartOf" itemscope
+                  itemtype="https://schema.org/PublicationVolume"><link
+                  itemprop="isPartOf" href="#periodical" /><span
+                  itemprop="volumeNumber">{{ .Params.volume }}</span></span>(<span
+              itemprop="issueNumber">{{ .Params.issue }}</span>) pp. <span itemprop="pagination">{{
+                .Params.publishing.pages }}</span>
+      </div>
+    </p>
+
+    {{ $baseurl := .Site.BaseURL }} {{ with .Params.authors }}
+    <h4>Articles by author{{ if gt (len .) 1 }}s{{ end }}</h4>
+    <ul class="author-list other-articles">
+      {{ range . }}
+      <li>
+        <a class="category" href="{{ $baseurl }}authors/{{ . | urlize }}">
+          <span>{{ (. | lower) | title }}</span>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+
+    <h4>Referencing</h4>
+    <h5>Online</h5>
+    <p class="reference web">
+      {{ partial "article/authors-apa.html" . }} ({{ .Params.publishing.year }},
+      {{ .Params.publishing.month }} 15). {{ .Title }}. wjbmr. {{ .Permalink
+      }}
+    </p>
+    <h5>Print</h5>
+    <p class="reference print">
+      {{ partial "article/authors-apa.html" . }} ({{ .Params.publishing.year
+      }}). {{ .Title }}. wjbmr.
+      <em>{{ .Params.volume }}</em>({{ .Params.issue }}), {{
+      .Params.publishing.pages }} {{ with .Params.doi }}
+      <a href="{{ . }}" title="{{ . }}" target="_blank">{{.}}</a>
+      {{ end }}
+    </p>
+
+    <h4>Share article</h4>
+    {{ partial "share.html" . }} {{ $related := .Site.RegularPages.Related . |
+    first 5 }} {{ with $related }}
+    <h4>Similar articles</h4>
+    <ul>
+      {{ range . }}
+      <li style="line-height: 1.3; margin-bottom: 0.8em">
+        <a href="{{ .RelPermalink }}" title="{{ .Title }}"> {{ .Title }} </a>
+        <br />
+        <small
+          style="display: inline-block; margin-top: 0.5em; line-height: 1.2"
+        >
+          {{ partial "article/authors.html" . }}
+        </small>
+      </li>
+      {{ end }}
+    </ul>
+    {{ end }}
+  </aside>
+</main>
+
+{{ partial "footer.html" . }}

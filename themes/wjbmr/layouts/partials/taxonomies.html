@@ -1,0 +1,40 @@
+{{ $baseurl := .Site.BaseURL }}
+
+<div class="taxonomies">  
+    <!-- {{ with.Site.Taxonomies.categories }}    
+    <section class="categories">
+        <h5 class="headline">Article categories</h5>
+        {{ range $name, $value := . }}
+        <a class="category"
+            href="{{ $baseurl }}categories/{{ $name | urlize }}"
+            >{{ humanize $name | title }} 
+            <span class="count">{{ .Count }}</span>
+        </a>
+        {{ end }}
+    </section>
+    {{ end }} -->
+
+    {{ with.Site.Taxonomies.tags }}    
+    <section class="tags">
+        <h4 class="headline">Tags</h4>
+        {{ range $name, $value := . }}
+        <span class="tag">
+            <a href="{{ $baseurl }}tags/{{ $name | urlize }}">{{ $name }} ({{ .Count }})</a>
+        </span>
+        {{ end }}
+    </section>
+    {{ end }}
+
+    <!-- {{ with.Site.Taxonomies.authors }}    
+    <section class="authors">
+        <h5 class="headline">Article authors</h5>
+        {{ range $name, $value := . }}
+            <a class="author" href="{{ $baseurl }}authors/{{ $name | urlize }}">
+                {{ replace $name  "-" " " | title }}
+                <span class="count">{{ .Count }} articles</span>
+            </a>
+        {{ end }}
+    </section>
+    {{ end }} -->
+</div>
+        

@@ -1,0 +1,28 @@
+<div class="list-item">
+  <div class="archive-list-item">
+      <a href="{{ .RelPermalink }}" title="{{ .Title }}">
+        <h5 itemprop="headline">{{ .Title }}
+          <br>
+          <small class="publication-category">{{ index .Params.Categories 0 }}</small>
+        </h5>
+      </a>
+      <br>
+      {{ with .Params.keywords }}
+        <p style="line-height: 1; margin: 0; margin-bottom: 5px;">
+            {{ range .}}
+                <small style="font-size: 12px;" class="keyword">{{ . }}</small>
+            {{end}}
+        </p>  
+      {{ end }}
+
+      {{ partial "article/authors.html" . }}
+      
+      {{ if in .Params.categories "Journal Article"}}
+        <small style="white-space: nowrap;">
+          &mdash;
+          volume {{ .Params.volume }}, issue {{ .Params.issue }}
+          &mdash; pp. {{ .Params.publishing.pages }}
+        </small>
+      {{ end }}
+  </div>
+</div>

@@ -1,0 +1,59 @@
+{{ $baseurl := .Site.BaseURL }}
+
+{{ $isArticles := (or (in .Permalink "/published/") (in .Permalink "/issues/") (in .Permalink "/archives/") (in .Permalink "/articles/") (in .Permalink "/categories/") (in .Permalink "/authors/") (in .Permalink "/keywords/") ) }}
+
+
+<header>
+  <!-- <div class="logo">
+    <img src="{{ $baseurl }}/images/image.png" title="wjbmr">
+    <h2>World Journal of Biomedical Research</h2>   
+  </div> -->
+  
+  <!-- <div class="logo alt">
+    <span>
+      <img src="{{ $baseurl }}/images/wjbmr_logo.png" title="wjbmr">
+      <h2>World Journal of Biomedical Research</h2>
+    </span>
+    <img src="{{ $baseurl }}/images/aksu_logo.png" title="wjbmr">
+    {{ partial "search-form.html" . }}
+  </div> -->
+
+  <div class="container banner">
+    <img src="{{ $baseurl }}/images/aksu_logo.png" title="wjbmr">
+    <h2>World Journal of Biomedical Research</h2>
+  </div>
+
+  <div class="search-sm">
+    {{ partial "search-form.html" . }}
+  </div>
+
+  <nav class="navigation">
+    <button class="nav-btn">Menu <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+      <path fill-rule="evenodd" d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" clip-rule="evenodd" />
+    </svg>
+    </button>
+    <ul>
+      <li  {{ if .IsHome }}class="active"{{ end }}>
+        <a href="{{ "/" | absURL }}" title="Homepage">Home</a>
+      </li>
+      <li  {{ if (in .Permalink "/about/") }}class="active"{{ end }}>
+        <a href="{{ "/about" | absURL }}" title="About wjbmr">About</a>
+      </li>
+      <li  {{ if $isArticles }}class="active"{{ end }}>
+        <a href="{{ "/published" | absURL }}" title="Published Issues">Published</a>
+      </li>
+      <li  {{ if (in .Permalink "/guidelines/") }}class="active"{{ end }}>
+        <a href="{{ "/guidelines" | absURL }}" title="Submission Guidelines">Guidelines</a>
+      </li>
+      <!-- <li  {{ if (in .Permalink "/publications/") }}class="active"{{ end }}>
+        <a href="{{ "/publications" | absURL }}" title="Other Publications">Other Publications</a>
+      </li> -->
+      <li  {{ if (in .Permalink "/submit/") }}class="active"{{ end }}>
+        <a href="{{ "/submit" | absURL }}" title="Submit a Manuscript">Submit Manuscript</a>
+      </li>
+      <li class="large-search">
+        {{ partial "search-form.html" . }}
+      </li>
+    </ul>
+  </nav>
+</header>

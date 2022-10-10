@@ -1,0 +1,29 @@
+{{ $authorsLen := len .Params.authors }}
+
+{{ with .Params.authors }}      
+  {{ if gt $authorsLen 2 }}
+      <span>   
+          {{ range first (sub $authorsLen 1) . }}            
+            {{ partial "article/name/apa.html" . }},
+          {{ end }}
+
+          {{ range last 1 . }}            
+              & {{ partial "article/name/apa.html" . }}
+          {{ end }}
+      </span>
+  {{ else if eq $authorsLen 2 }}
+      <span>
+          {{ range first 1 . }}            
+            {{ partial "article/name/apa.html" . }},
+          {{ end }}
+          {{ range last 1 . }}            
+              & {{ partial "article/name/apa.html" . }}
+          {{ end }}
+      </span>
+  {{ else }}       
+    {{ range . }} 
+        {{ partial "article/name/apa.html" . }}
+    {{ end }}
+  {{ end }}
+{{ end }}   
+  

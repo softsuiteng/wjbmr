@@ -1,0 +1,71 @@
+{{ partial "head.html" . }} 
+
+{{ partial "header.html" . }}
+
+<main role="main" class="article_page" >
+  <article>
+    <h2>
+      {{ .Title }}
+    </h2>
+
+    <p style="margin: 1.2em 0 2.5em">
+      <a download="{{ .Title }}" 
+        class="download-btn"
+        title="{{ .Title }}" 
+        href="./{{ .Params.file }}">
+        Download {{ index .Params.categories 0 }}
+        <span class="material-icons">
+          picture_as_pdf
+        </span>
+      </a>
+    </p>
+
+    {{ .Content }}
+
+    <!-- <hr style="margin: 3em 0 2.5em;"> -->
+
+  </article>
+
+  <aside>   
+
+    <h4>Meta</h4>
+    <p class="meta">
+      <span class="item">
+        <strong>
+          {{ if gt (len .Params.authors) 1 }}
+            Authors:
+          {{ else }}
+            Author:
+          {{ end }}
+        </strong>
+        {{ partial "article/authors.html" . }} 
+      </span>
+      <span class="item">
+      {{ partial "article/keywords.html" . }}
+      </span>
+    </p>    
+
+    <h4>Share article</h4>
+    {{ partial "share.html" . }}
+
+    {{ $related := .Site.RegularPages.Related . | first 5 }}
+    {{ with $related }}
+      <h4>Similar articles</h4>
+      <ul>
+        {{ range . }}
+          <li style="line-height: 1.5;">
+            <a href="{{ .RelPermalink }}" title="{{ .Title }}">
+              {{ .Title }}
+            </a>
+            <br>
+            <small>
+              {{ partial "article/authors.html" . }}
+            </small>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </aside>
+</main>
+
+{{ partial "footer.html" . }}

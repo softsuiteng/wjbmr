@@ -1,0 +1,97 @@
+{{ $newestVolume := 6 }}
+{{ $newestIssue := "1&2" }}
+
+{{ $baseurl := .Site.BaseURL }} 
+{{ $title := humanize .Title | title }} 
+{{ $allArticles := (where $.Site.RegularPages "Section" "articles") }} 
+{{ $allArticles := $allArticles | intersect (where .Site.RegularPages "Params.volume" "==" .Params.volume) }} 
+{{ $issueArticles := $allArticles | intersect (where .Site.RegularPages "Params.issue" "==" .Params.issue) }} 
+{{ $paginator := .Paginate $issueArticles (or .Site.Params.paginate 5) }}
+
+<!-- {{ $orderedArticles := ((((where $.Site.RegularPages "Section" "articles").ByParam "issue").Reverse.ByParam "volume")).ByParam "publishing.position" }}
+{{ $recent := first 5 $orderedArticles }} -->
+
+{{ $recent := (((((where $.Site.RegularPages "Section" "articles").ByParam "volume").Reverse.ByParam "issue"))) }} 
+{{ $recent := $recent | intersect (where .Site.RegularPages "Params.volume" $newestVolume) }} 
+{{ $recent := $recent | intersect (where .Site.RegularPages "Params.issue" $newestIssue) }} 
+{{ $recent := first 6 ($recent.ByParam "publishing.position") }} 
+
+{{ partial "head.html" . }} 
+{{ partial "header.html" . }}
+
+<main role="main" class="article_page">
+  <article>
+    <div class="meta">
+      <a href="{{ $baseurl }}published">
+        <span class="material-icons"> chevron_left </span> Issues
+      </a>
+      <span class="val"> &nbsp; / {{ $title }} </span>
+    </div>
+
+    <h3 class="my-4">
+      {{ .Title }} <br />
+      <small class="text-muted"
+        >Published {{ dateFormat "January, 2006" .Date }}</small
+      >
+    </h3>
+
+    {{ if .Params.preliminary }}
+    <p style="margin: 1.2em 0 2.5em">
+      <a
+        download="{{ .Title }}"
+        class="btn btn-sm btn-outline-primary text-uppercase"
+        title="Download: {{ .Title }} preliminary pages"
+        href="./{{ .Params.preliminary }}"
+      >
+        Download preliminary pages
+      </a>
+    </p>
+    {{ end }}
+
+    <ul>
+      {{ range $issueArticles.ByParam "publishing.position" }}
+      <li>{{ partial "article/list-item.html" . }}</li>
+      {{ end }}
+    </ul>
+  </article>
+
+  <aside>
+    <h4>About</h4>
+    <p class="site-description">
+      {{ .Site.Data.Globals.Description | markdownify }}
+    </p>
+    <a
+      class="btn btn-outline-success text-uppercase"
+      href="/guidelines"
+      title="Read submission guidelines"
+      >Submitting an article</a
+    >
+
+    <!-- Todo: Show recent news update here. -->
+    <!-- <h4>News Update</h4> -->
+
+    {{ if and (ne .Params.volume $newestVolume) (ne .Params.issue $newestIssue) }}
+
+    <h4>Newest Articles</h4>
+    <div class="articles">
+      <ul>
+        {{ range $recent }}
+        <li style="line-height: 1.5; margin-bottom: 0.5em">
+          <a href="{{ .RelPermalink }}" title="{{ .Title }}"> {{ .Title }} </a>
+          <br />
+          <small> {{ partial "article/authors.html" . }} </small>
+        </li>
+        {{ end }}
+      </ul>
+      <p class="ml-3">
+        <a href="/published" class="btn btn-warning text-uppercase"
+          >More articles</a
+        >
+      </p>
+    </div>
+
+    {{ end }}
+  </aside>
+</main>
+
+{{ partial "footer.html" . }}

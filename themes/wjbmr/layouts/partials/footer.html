@@ -1,0 +1,56 @@
+<div id="back-to-top">
+  <button><i class="material-icons">arrow_upward</i></button>
+</div>
+{{ partial "search-index.html" . }}
+<footer>    
+  <p itemscope itemtype="https://schema.org/Periodical" itemid="#periodical">    
+      <span>&copy; {{ .Site.LastChange.Year }}</span> <span itemprop="publisher">{{ .Site.Title }}</span> <br>   
+      ISSN: <b itemprop="issn">7775-3348</b><br>
+      <a class="aksu" rel="noopener" target="_blank" href="https://www.aksu.edu.ng/">
+        AKSU Website
+        <span class="material-icons">
+          launch
+        </span>
+      </a>            
+  </p> 
+
+  <address  class="text-right">
+    <p>
+      <strong>Faculty of Management Sciences</strong> <br>
+      Akwa Ibom State University <br>
+      Obio Akpa, Oruk Anam L.G.A., <br>
+      Akwa Ibom State, Nigeria. <br>
+      <a href="tel:+2348023502118">(+234) 802 350 2118</a>
+    </p>
+  </address> 
+</footer>
+
+{{ partial "scripts.html" . }}
+
+<script>  
+  const body = document.body;
+  let lastScroll = 0;
+
+  window.addEventListener("scroll", () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll <= 0) {
+      body.classList.remove("scroll-up");
+      return;
+    }
+
+    if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
+      body.classList.remove("scroll-up");
+      body.classList.add("scroll-down");
+    } else if (
+      currentScroll < lastScroll &&
+      body.classList.contains("scroll-down")
+    ) {
+      body.classList.remove("scroll-down");
+      body.classList.add("scroll-up");
+    }
+    lastScroll = currentScroll;
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+{{ $issue := .Title }}
+
+{{ range where .Site.RegularPages "Section" "articles" }}
+  <div>
+    <h4>
+      {{ .Title }}
+    </h4>
+    <a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
+  </div>
+{{ end }}

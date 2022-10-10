@@ -1,0 +1,23 @@
+<div class="list-item">
+  <!-- <img onerror="this.src = '/images/aksu_logo.jpg'" src="{{ .Params.image }}" alt="{{ .Title }}"> -->
+ 
+  <div class="archive-list-item">
+      <a href="{{ .RelPermalink }}" title="{{ .Title }}">
+        <h5 itemprop="headline">{{ .Title }}</h5>
+      </a>
+      {{ with .Params.keywords }}
+        <p style="line-height: 1; margin: 0; margin-bottom: 5px;">
+            {{ range .}}
+                <small style="font-size: 12px;" class="keyword">{{ humanize . | title }}</small>
+            {{end}}
+        </p>  
+      {{ end }}
+
+      {{ partial "article/authors.html" . }}
+      <small style="white-space: nowrap;">
+        &mdash;
+        volume {{ .Params.volume }}, issue {{ .Params.issue }}
+        &mdash; pp. {{ .Params.publishing.pages }}
+      </small>
+  </div>
+</div>

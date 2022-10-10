@@ -1,0 +1,20 @@
+{{ if gt .TotalPages 1 }} 
+  {{ $lastItem := (mul .PageSize .PageNumber) }}
+  {{ $start := sub (mul .PageSize .PageNumber) (sub .PageSize 1 ) }}
+  {{ $end := cond (ge $lastItem .TotalNumberOfElements) .TotalNumberOfElements $lastItem }}
+  <nav class="paginator container">
+    <h5 class="counter"><span>Showing {{ $start }} &mdash; {{$end}} of {{ .TotalNumberOfElements }} articles</span><h5/>
+
+   <p class="mt-4">
+    {{ if .HasPrev }}
+      <a class="wjbmr-btn left btn btn-dark" href="{{ .Prev.URL }}"><i class="material-icons">keyboard_arrow_left</i> Previous page</a>
+    {{ end }}
+
+    {{ if .HasNext }}
+      <a class="wjbmr-btn right btn btn-dark" href="{{ .Next.URL }}">Next page <i class="material-icons">keyboard_arrow_right</i></a>
+    {{ end }}
+   </p>
+  </nav>
+{{ end }}
+
+
