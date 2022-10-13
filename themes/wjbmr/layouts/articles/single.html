@@ -68,7 +68,7 @@
       {{ range . }}
       <li>
         <a class="category" href="{{ $baseurl }}authors/{{ . | urlize }}">
-          <span>{{ (. | lower) | title }}</span>
+          <span>{{ . }}</span>
         </a>
       </li>
       {{ end }}

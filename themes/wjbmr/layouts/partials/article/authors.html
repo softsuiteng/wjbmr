@@ -4,25 +4,25 @@
   {{ if gt $authorsLen 2 }}
       <span>   
           {{ range first (sub $authorsLen 2) . }}            
-              {{ (. | lower) | title }},
+              {{ . }},
           {{ end }}
-          {{ (index . (sub $authorsLen 2) | lower ) | title }}
+          {{ index . (sub $authorsLen 2)  }}
           {{ range last 1 . }}            
-              & {{ (. | lower) | title }}
+              & {{ . }}
           {{ end }}
       </span>
   {{ else if ge $authorsLen 2 }}
       <span>
           {{ range first (sub $authorsLen 1) . }}            
-              {{ (. | lower) | title }}
+              {{ . }}
           {{ end }}
           {{ range last 1 . }}            
-              & {{ (. | lower) | title }}
+              & {{ . }}
           {{ end }}
       </span>
   {{ else }}       
     {{ range . }}            
-      <span>{{ (. | lower) | title }}</span>
+      <span>{{ . }}</span>
     {{ end }}
   {{ end }}
 {{ end }}   

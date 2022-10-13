@@ -2,11 +2,11 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html, body { color: #222222; scroll-behavior: smooth; font-family: 'DM Sans', sans-serif; }
+html, body { color: #222222; scroll-behavior: smooth; font-family: 'Overpass', sans-serif; }
 
 body { line-height: 2; overflow-x: hidden !important; }
 
-h1, h2, h3, h4, h5, h6 { font-family: 'DM Sans', sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Ubuntu', sans-serif; }
 
 a { transition: color 300ms ease-out; }
 
@@ -40,7 +40,7 @@ p { line-height: 2; }
 
 .bg-photo { position: absolute; top: 0; height: 100px; z-index: -9; }
 
-header { background-color: #f7e5ec; background-image: url(../images/imagee.jpg); background-attachment: fixed, scroll; }
+header { background-color: #f7e5ec; background-color: #c1ecec; background-image: url(../images/imagee.jpg); background-attachment: fixed, scroll; }
 
 header .logo { text-decoration: none; color: #29335c; line-height: 1.2em; text-transform: uppercase; transition: all 400ms ease; line-height: 1; display: block; text-align: center; padding: 3.5em 3em 2.5em; }
 
@@ -91,7 +91,7 @@ nav.navigation { display: flex; align-items: center; flex-direction: column; bac
 
 nav.navigation ul { display: flex; list-style: none; margin-top: 1.2em; flex-wrap: wrap; align-items: center; width: 65rem; padding: 0 1em; }
 
-nav.navigation ul li a, nav.navigation ul li a:hover, nav.navigation ul li a:focus, nav.navigation ul li a:active { color: #d2efee; color: #fff; font-size: 0.95em; font-weight: bold; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; }
+nav.navigation ul li a, nav.navigation ul li a:hover, nav.navigation ul li a:focus, nav.navigation ul li a:active { color: #8ec1c0; color: #fff; font-size: 0.95em; font-weight: bold; text-decoration: none; text-transform: uppercase; letter-spacing: 2px; }
 
 nav.navigation ul li.active a, nav.navigation ul li:hover a { color: #e2e4a3; }
 
@@ -165,7 +165,7 @@ footer .facebook { padding-top: 0.5em; }
 
 footer p { margin: 1em 0; line-height: 1.66; }
 
-footer .aksu { font-size: 0.85em; color: #d2efee; padding: 1px 8px; display: inline-block; display: inline-block; margin-top: 1em; font-weight: 500; text-transform: uppercase; line-height: 1.2; border-radius: 0.5em; border: 1px solid #d2efee; }
+footer .aksu { font-size: 0.85em; color: #8ec1c0; padding: 1px 8px; display: inline-block; display: inline-block; margin-top: 1em; font-weight: 500; text-transform: uppercase; line-height: 1.2; border-radius: 0.5em; border: 1px solid #8ec1c0; }
 
 footer .aksu .material-icons { font-size: 1.15em; transform: translateY(2px); }
 
@@ -216,9 +216,13 @@ footer .copyright { text-align: right; }
 
 .about_page table td em { font-size: 00.95em; }
 
+.about_page ol, .about_page ul { padding-left: 1.75em; }
+
 .guidelines_page h3 { color: #29335c; margin: 1em 0 0.5em; }
 
 .guidelines_page ul, .guidelines_page ol { padding-left: 20px; }
+
+.guidelines_page li + li { margin-top: 1em; }
 
 .guidelines_page p + ul, .guidelines_page p + ol { margin-top: -1em; }
 
@@ -329,7 +333,7 @@ footer .copyright { text-align: right; }
 
 #search input[type="text"] { all: unset; outline: none; padding-left: 0.66em; background-color: #ffffff; border-radius: 0.25em 0 0 0.25em; }
 
-#search button { border: none; outline: none; padding: 0 0.66em 0 0.6em; border-radius: 0 0.25em 0.25em 0; white-space: nowrap; color: #29335c; background-color: #d2efee; }
+#search button { border: none; outline: none; padding: 0 0.66em 0 0.6em; border-radius: 0 0.25em 0.25em 0; white-space: nowrap; color: #29335c; background-color: #8ec1c0; }
 
 #search button:hover { color: #fff; }
 
@@ -360,7 +364,7 @@ footer .copyright { text-align: right; }
 
 .meta a { color: #29335c; padding: 2px 5px; border-radius: 4px; border: 1px solid #29335c; transition: all 300ms ease-out; }
 
-.meta a:hover, .meta a:focus { color: #d2efee; border: 1px solid #d2efee; }
+.meta a:hover, .meta a:focus { color: #8ec1c0; border: 1px solid #8ec1c0; }
 
 .publication-category { background-color: #d4ecd9; padding: 4px 5px 0; font-size: 0.66rem; letter-spacing: 1px; text-transform: uppercase; font-weight: 500; display: inline-block; margin-bottom: 0.5em; border-radius: 2px; }
 
@@ -377,6 +381,8 @@ footer .copyright { text-align: right; }
 .banner img { height: 60px; }
 
 .banner h2 { text-transform: uppercase; font-family: 'Inter', sans-serif; line-height: 1; padding: 0; margin: 0; letter-spacing: 2px; color: #ffffff; }
+
+.banner .issn { line-height: 1.5; font-weight: bold; }
 
 .scroll-up .navigation { position: fixed; width: 100%; top: 0; transition: all 400ms ease-in-out; }
 
