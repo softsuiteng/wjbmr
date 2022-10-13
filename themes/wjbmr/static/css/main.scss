@@ -12,12 +12,12 @@ $grey: #726d7a;
 $grey-light: #a7a0b3;
 
 
-$primary: #db2b39;
-$primary-light: #db2b39;
-$accent: #f0cea0;
-$accent-dark: #f0cea0;
-$secondary: #29335c;
-$secondary-light: #29335c;
+$primary: #29335c;
+$primary-light: #32417d;
+$accent: #e2e4a3;
+$accent-dark: #e2e4a3;
+$secondary: #74ccc9;
+$secondary-light: #d2efee;
 $dark: #534d41;
 $grey: #726d7a;
 $grey-light: #a7a0b3;
@@ -1366,6 +1366,7 @@ $blue: #1b0569;
 .banner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   max-width: 65rem;
   margin: 0 auto;
   gap: 1em;
