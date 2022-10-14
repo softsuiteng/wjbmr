@@ -19,8 +19,8 @@ issue: 1
 publishing:
   position: 2
   pages: "10-16"
-  month: "April"
-  year: 2022
+  month: "September"
+  year: 2019
 
 file: "wjbmr_09_01_02.pdf" # volume_issue_position
 image: "wjbmr_09_01_02.jpg" # volume_issue_position
