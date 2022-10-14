@@ -42,14 +42,14 @@
       <li  {{ if $isArticles }}class="active"{{ end }}>
         <a href="{{ "/published" | absURL }}" title="Published Issues">Published</a>
       </li>
+      <li  {{ if $isArticles }}class="active"{{ end }}>
+        <a href="{{ "/published" | absURL }}" title="Published Issues">Resources</a>
+      </li>
       <li  {{ if (in .Permalink "/guidelines/") }}class="active"{{ end }}>
         <a href="{{ "/guidelines" | absURL }}" title="Submission Guidelines">Guidelines</a>
       </li>
-      <!-- <li  {{ if (in .Permalink "/publications/") }}class="active"{{ end }}>
-        <a href="{{ "/publications" | absURL }}" title="Other Publications">Other Publications</a>
-      </li> -->
       <li  {{ if (in .Permalink "/submit/") }}class="active"{{ end }}>
-        <a href="{{ "/submit" | absURL }}" title="Submit a Manuscript">Submit Manuscript</a>
+        <a href="{{ "/contact" | absURL }}" title="Submit a Manuscript">Contact Us</a>
       </li>
       <li class="large-search">
         {{ partial "search-form.html" . }}
