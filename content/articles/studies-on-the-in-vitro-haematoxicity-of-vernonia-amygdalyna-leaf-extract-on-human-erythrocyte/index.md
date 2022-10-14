@@ -1,6 +1,6 @@
 ---
 title: "Studies on the in Vitro Haematoxicity of Vernonia Amygdalyna Leaf Extract on Human Erythrocyte"
-date: 2021-12-15T10:00:00+01:00
+date: 2021-04-15T10:00:00+01:00
 draft: false
 
 section: "Articles"

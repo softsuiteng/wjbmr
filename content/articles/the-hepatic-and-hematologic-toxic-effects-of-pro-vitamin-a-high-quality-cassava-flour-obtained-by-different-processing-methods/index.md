@@ -1,6 +1,6 @@
 ---
 title: "The Hepatic and Hematologic Toxic Effects of Pro Vitamin a High Quality Cassava Flour Obtained by Different Processing Methods"
-date: 2021-12-15T10:00:00+01:00
+date: 2021-09-15T10:00:00+01:00
 draft: false
 
 section: "Articles"
@@ -19,7 +19,7 @@ issue: 2
 publishing:
   position: 7
   pages: "44-51"
-  month: "september"
+  month: "September"
   year: 2021
 
 file: "wjbmr_08_02_07.pdf" # volume_issue_position

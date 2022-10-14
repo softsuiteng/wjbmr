@@ -1,6 +1,6 @@
 ---
 title: "Some Haemostatic Parameters of Patients With Type Ii Diabetes Mellitus Attending Metabolic Clinics in Kano Metropolis"
-date: 2021-12-15T10:00:00+01:00
+date: 2021-04-15T10:00:00+01:00
 draft: false
 
 section: "Articles"

@@ -1,6 +1,6 @@
 ---
 title: "Impact of Covid 19 Pandemic on Anaesthesia Trainees and Their Training in a Teaching Hospital in Nigeria"
-date: 2021-12-15T10:00:00+01:00
+date: 2021-04-15T10:00:00+01:00
 draft: false
 
 section: "Articles"

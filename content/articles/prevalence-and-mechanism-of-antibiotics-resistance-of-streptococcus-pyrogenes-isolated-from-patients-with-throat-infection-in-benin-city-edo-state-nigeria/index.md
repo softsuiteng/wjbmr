@@ -1,6 +1,6 @@
 ---
 title: "Prevalence and Mechanism of Antibiotics Resistance of Streptococcus Pyogenes Isolated From Patients With Throat Infection in Benin City Edo State Nigeria"
-date: 2021-12-15T10:00:00+01:00
+date: 2020-04-15T10:00:00+01:00
 draft: false
 
 section: "Articles"

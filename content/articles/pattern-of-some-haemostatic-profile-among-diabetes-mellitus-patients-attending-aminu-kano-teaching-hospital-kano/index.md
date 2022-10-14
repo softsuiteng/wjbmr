@@ -1,6 +1,6 @@
 ---
 title: "Pattern of Some Haemostatic Profile Among Diabetes Mellitus Patients Attending Aminu Kano Teaching Hospital Kano"
-date: 2021-12-15T10:00:00+01:00
+date: 2020-09-15T10:00:00+01:00
 draft: false
 
 section: "Articles"
@@ -19,7 +19,7 @@ issue: 2
 publishing:
   position: 3
   pages: "25-30"
-  month: "september"
+  month: "September"
   year: 2020
 
 file: "wjbmr_07_02_03.pdf" # volume_issue_position
@@ -33,14 +33,4 @@ social:
   description: "World Journal of Biomedical Research"
   image:
 ---
-Diabetes mellitus is a heterogeneous disorder that affects cellular metabolism in many ways, and
-haemostatic profiles were reported to be adversely affected. This study was aimed to determine the
-pattern of some haemostatic profiles of subjects with Diabetes mellitus attending Aminu Kano
-Teaching Hospital, Kano. This cross-sectional study was carried out on eighty (80) participants
-comprising forty (40) diabetic patients along with forty (40) healthy controls. Five millilitres of venous
-blood was collected from each participant and placed in appropriate containers for prothrombin time
-(PT), activated partial thromboplastin time (APTT), and platelet count (PLC). The mean ± standard
-deviation of PLC and APTT of studied groups showed a statistically significant difference (p-value =
-0.0373 and <0.0001 respectively) while PT of diabetic subjects and controls revealed no statistically
-significant difference (p-value=0.9128). We inferred that reduced APTT and increased PLC may
-contribute to a hypercoagulable state in subjects with Diabetes mellitus.
+Diabetes mellitus is a heterogeneous disorder that affects cellular metabolism in many ways, and haemostatic profiles were reported to be adversely affected. This study was aimed to determine the pattern of some haemostatic profiles of subjects with Diabetes mellitus attending Aminu Kano Teaching Hospital, Kano. This cross-sectional study was carried out on eighty (80) participants comprising forty (40) diabetic patients along with forty (40) healthy controls. Five millilitres of venous blood was collected from each participant and placed in appropriate containers for prothrombin time(PT), activated partial thromboplastin time (APTT), and platelet count (PLC). The mean ± standard deviation of PLC and APTT of studied groups showed a statistically significant difference (p-value = 0.0373 and <0.0001 respectively) while PT of diabetic subjects and controls revealed no statistically significant difference (p-value=0.9128). We inferred that reduced APTT and increased PLC may contribute to a hypercoagulable state in subjects with Diabetes mellitus.

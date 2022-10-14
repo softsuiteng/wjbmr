@@ -1,6 +1,6 @@
 ---
 title: "Anti Nociceptive Activity of Aqueous Licorice Root Extract on Neuropathic Pain and Its Effect on Some Selected Biochemical Parameters in Male Wistar Rats"
-date: 2021-12-15T10:00:00+01:00
+date: 2019-09-15T10:00:00+01:00
 draft: false
 
 section: "Articles"
