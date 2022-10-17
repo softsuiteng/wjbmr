@@ -22,8 +22,8 @@ publishing:
   month: "September"
   year: 2015
 
-file: "wjbmr_09_01_04.pdf" # volume_issue_position
-image: "wjbmr_09_01_04.jpg" # volume_issue_position
+file: "wjbmr_02_02_05.pdf" # volume_issue_position
+image: "wjbmr_02_02_05.jpg" # volume_issue_position
 
 social:
   card: "summary"
