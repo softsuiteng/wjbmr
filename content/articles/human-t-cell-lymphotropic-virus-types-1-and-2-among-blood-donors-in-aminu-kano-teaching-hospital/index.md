@@ -22,8 +22,8 @@ publishing:
   month: "April"
   year: 2018
 
-file: "wjbmr_04_05_01_1.pdf" # volume_issue_position
-image: "wjbmr_09_01_00.jpg" # volume_issue_position
+file: "wjbmr_05_01_01.pdf" # volume_issue_position
+image: "wjbmr_05_01_01.jpg" # volume_issue_position
 
 social:
   card: "summary"
