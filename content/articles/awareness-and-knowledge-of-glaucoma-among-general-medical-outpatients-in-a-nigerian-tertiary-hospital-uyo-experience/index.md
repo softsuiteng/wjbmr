@@ -23,8 +23,8 @@ publishing:
   month: "September"
   year: 2018
 
-file: "wjbmr_04_05_02_8.pdf" # volume_issue_position
-image: "wjbmr_09_01_00.jpg" # volume_issue_position
+file: "wjbmr_05_02_08.pdf" # volume_issue_position
+image: "wjbmr_05_02_08.jpg" # volume_issue_position
 
 social:
   card: "summary"

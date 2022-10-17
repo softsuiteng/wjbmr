@@ -23,8 +23,8 @@ publishing:
   month: "September"
   year: 2018
 
-file: "wjbmr_04_05_02_4.pdf" # volume_issue_position
-image: "wjbmr_09_01_00.jpg" # volume_issue_position
+file: "wjbmr_05_02_04.pdf" # volume_issue_position
+image: "wjbmr_05_02_04.jpg" # volume_issue_position
 
 social:
   card: "summary"
@@ -34,7 +34,7 @@ social:
   description: "World Journal of Biomedical Research"
   image:
 ---
-This study was designed to evaluate the ameliorating efficiency of the ethanol leaf-extract of Ageratum
+This study was designed to evaluate the ameliorating efficiency of the ethanol leaf-extract of Ageratum           
 conyzoides on Nigerian Bonnylight crude oil-induced dyslipidemia. Twenty female Wistar rats (120-150g body
 weight) were divided into four groups of five rats each. The rats in group I served as the control group and were
 oral gavaged 3ml/kg body weight of normal saline; group II gavaged 748.33mg/kg body weight of the extract of
