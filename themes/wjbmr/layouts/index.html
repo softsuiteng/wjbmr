@@ -1,5 +1,5 @@
-{{ $newestVolume := 9 }}
-{{ $newestIssue := 1 }}
+{{ $newestVolume := 3 }}
+{{ $newestIssue := 2 }}
 
 {{ $recent := (((((where $.Site.RegularPages "Section" "articles").ByParam "volume").Reverse.ByParam "issue"))) }}  
 {{ $recent := $recent | intersect (where .Site.RegularPages "Params.volume" $newestVolume) }} 
@@ -17,7 +17,7 @@
 
   <a href="/guidelines" class="btn btn-outline btn-outline-success text-uppercase">Submitting an article</a>
 
-  <h3 style="margin: 1.5em 0 0.5em">Recent Articles</h3>
+  <h3 style="margin: 1.5em 0 0.5em">Current Edition <small>&mdash; Volume {{ $newestVolume}}, Issue {{ $newestIssue }}</small></h3>
 
   {{ $recent := first 6 ($recent.ByParam "publishing.position") }}
 

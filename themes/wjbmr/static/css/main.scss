@@ -12,12 +12,13 @@ $grey: #726d7a;
 $grey-light: #a7a0b3;
 
 
-$primary: #db2b39;
-$primary-light: #db2b39;
-$accent: #f0cea0;
-$accent-dark: #f0cea0;
-$secondary: #29335c;
-$secondary-light: #29335c;
+$primary: #29335c;
+$primary-light: #32417d;
+$accent: #e2e4a3;
+$accent-dark: #e2e4a3;
+$secondary: #74ccc9;
+$secondary-light: #8ec1c0;
+$secondary-lighter: #c1ecec;
 $dark: #534d41;
 $grey: #726d7a;
 $grey-light: #a7a0b3;
@@ -46,8 +47,9 @@ body {
   scroll-behavior: smooth;
   // font-family: 'Fira Sans', sans-serif;
   // font-family: 'Alef', sans-serif;
-  font-family: 'DM Sans', sans-serif;
+  // font-family: 'DM Sans', sans-serif;
   // font-family: 'Gentium Book Plus', serif;
+  font-family: 'Overpass', sans-serif;
 }
 
 body {
@@ -61,7 +63,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'DM Sans', sans-serif;
+  // font-family: 'DM Sans', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 a {
@@ -189,6 +192,7 @@ p {
 
 header {
   background-color: #f7e5ec;
+  background-color: $secondary-lighter;
   // background-image: radial-gradient(#6979c7 0.5px, #f7e5ec 0.5px);
   // background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
 
@@ -860,6 +864,10 @@ footer {
       }
     }
   }
+
+  ol, ul {
+    padding-left: 1.75em;
+  }
 }
 
 .guidelines_page {
@@ -871,6 +879,10 @@ footer {
   ul,
   ol {
     padding-left: 20px;
+  }
+
+  li + li {
+    margin-top: 1em;
   }
 
   p + ul,
@@ -1366,6 +1378,7 @@ $blue: #1b0569;
 .banner {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   max-width: 65rem;
   margin: 0 auto;
   gap: 1em;
@@ -1388,6 +1401,11 @@ $blue: #1b0569;
     // padding: 1em;
     // background-color: #829ace;
     color: #ffffff;
+  }
+
+  .issn {
+    line-height: 1.5;
+    font-weight: bold;
   }
 }
 

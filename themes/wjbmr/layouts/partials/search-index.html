@@ -1,5 +1,5 @@
 {{ $publications := where .Site.Pages "Section" "articles" }}
-{{ $publications := $publications | union (where .Site.Pages "Section" "publications") }}
+{{/*  {{ $publications := $publications | union (where .Site.Pages "Section" "publications") }}  */}}
 
 <script>
   window.store = {
@@ -11,8 +11,8 @@
           "title": "{{ .Title  }}",
           "section": "{{ .Section  }}",
           "publication": "volume {{ .Params.volume  }}, issue {{ .Params.issue  }}",
-          "authors": [{{ range .Params.Authors }}" {{ (. | lower) | title }}",{{ end }}],
-          "keywords": [{{ range .Params.Keywords }}" {{ . }}",{{ end }}],
+          "authors": [{{ range .Params.Authors }}" {{ (. | lower) | title }}",{{ end }}].join(' '),
+          "keywords": [{{ range .Params.Keywords }}" {{ . }}",{{ end }}].join(' '),
           "content": {{ .Content | plainify }}, // Strip out HTML tags
           "url": "{{ .Permalink }}"
       },
