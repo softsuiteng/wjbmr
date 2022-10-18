@@ -19,8 +19,12 @@
   </div> -->
 
   <div class="container banner">
-    <img src="{{ $baseurl }}/images/aksu_logo.png" title="wjbmr">
-    <h2>World Journal of Biomedical Research</h2>
+    <img src="{{ $baseurl }}/logo.png" title="wjbmr">
+    
+    <p class="issn">
+      eISSN: 2536-6645 <br>
+      pISSN: 2384-5805
+    </p>
   </div>
 
   <div class="search-sm">
@@ -42,11 +46,11 @@
       <li  {{ if $isArticles }}class="active"{{ end }}>
         <a href="{{ "/published" | absURL }}" title="Published Issues">Published</a>
       </li>
-      <li  {{ if $isArticles }}class="active"{{ end }}>
-        <a href="{{ "/published" | absURL }}" title="Published Issues">Resources</a>
+      <li  {{ if (in .Permalink "/resources/") }}class="active"{{ end }}>
+        <a href="{{ "/resources" | absURL }}" title="Resources">Resources</a>
       </li>
       <li  {{ if (in .Permalink "/guidelines/") }}class="active"{{ end }}>
-        <a href="{{ "/guidelines" | absURL }}" title="Submission Guidelines">Guidelines</a>
+        <a href="{{ "/instructions" | absURL }}" title="Instructions to authors">Instructions</a>
       </li>
       <li  {{ if (in .Permalink "/submit/") }}class="active"{{ end }}>
         <a href="{{ "/contact" | absURL }}" title="Submit a Manuscript">Contact Us</a>
