@@ -1,5 +1,5 @@
 ---
-title: "Multifocal Avascular Necrosis Complicating Delivery a Report of Two Cases"
+title: "Multifocal Avascular Necrosis Complicating Delivery: A Report of Two Cases"
 date: 2017-04-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Multifocal Avascular Necrosis Complicating Delivery a Report of Two Cases"
+  title: "Multifocal Avascular Necrosis Complicating Delivery: A Report of Two Cases"
   description: "World Journal of Biomedical Research"
   image:
 ---

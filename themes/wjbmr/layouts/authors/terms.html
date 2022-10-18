@@ -6,17 +6,24 @@
 {{ $paginator := .Paginate (where .Data.Pages "Section" "articles") (or .Site.Params.paginate 5) }}
 
 <main role="main" class="keywords-list">
-  <h2 class="list-title">Authors on <span class="text-danger">wjbmr</span></h2>
+  <h2 class="list-title">{{ len .Site.Taxonomies.authors }} Authors on <span class="text-danger">wjbmr</span></h2>
 
   {{ with .Site.Taxonomies.authors }}
   <ul class="keywords">
     {{ range $name, $value := . }}
     <li>
       <a class="category" href="{{ $baseurl }}authors/{{ $name | urlize }}">
-        <span
-          >{{ humanize $name | title }} ({{ .Count }} {{ if gt .Count
-          1}}articles{{ else }}article{{ end }})</span
-        >
+        <span>
+          {{ $parts := humanize $name }}
+          {{ $splits := split $parts " "}}
+
+          {{ range first (sub (len $splits) 1) $splits }}    
+            {{ . }}
+          {{ end }}
+          {{ (index (last 1 $splits) 0 | upper) }}
+          
+          ({{ .Count }} {{ if gt .Count 1}}articles{{ else }}article{{ end }})
+        </span>
       </a>
     </li>
     {{ end }}
@@ -24,4 +31,6 @@
   {{ end }}
 </main>
 
-{{ partial "paginator.html" $paginator }} {{ partial "footer.html" . }}
+{{ partial "paginator.html" $paginator }} 
+
+{{ partial "footer.html" . }}

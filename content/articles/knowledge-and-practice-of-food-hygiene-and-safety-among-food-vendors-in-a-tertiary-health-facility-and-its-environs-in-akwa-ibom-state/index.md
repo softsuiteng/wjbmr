@@ -1,5 +1,5 @@
 ---
-title: "Knowledge and Practice of Food Hygiene and Safety Among Food Vendors in a Tertiary Health Facility and Its Environs in Akwa Ibom Stat"
+title: "Knowledge and Practice of Food Hygiene and Safety Among Food Vendors in a Tertiary Health Facility and Its Environs in Akwa Ibom State"
 date: 2020-04-15T10:00:00+01:00
 draft: false
 
@@ -30,7 +30,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Knowledge and Practice of Food Hygiene and Safety Among Food Vendors in a Tertiary Health Facility and Its Environs in Akwa Ibom Stat"
+  title: "Knowledge and Practice of Food Hygiene and Safety Among Food Vendors in a Tertiary Health Facility and Its Environs in Akwa Ibom State"
   description: "World Journal of Biomedical Research"
   image:
 ---

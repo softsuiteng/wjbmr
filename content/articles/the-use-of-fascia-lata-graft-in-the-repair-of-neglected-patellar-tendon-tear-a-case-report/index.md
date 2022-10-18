@@ -1,5 +1,5 @@
 ---
-title: "The Use of Fascia Lata Graft in the Repair of Neglected Patellar Tendon Tear a Case Report"
+title: "The Use of Fascia Lata Graft in the Repair of Neglected Patellar Tendon Tear: A Case Report"
 date: 2017-09-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "The Use of Fascia Lata Graft in the Repair of Neglected Patellar Tendon Tear a Case Report"
+  title: "The Use of Fascia Lata Graft in the Repair of Neglected Patellar Tendon Tear: A Case Report"
   description: "World Journal of Biomedical Research"
   image:
 ---

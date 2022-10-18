@@ -1,5 +1,5 @@
 ---
-title: "Socio Demographic and Clinical Profile of Asthmatic Children as Seen in a Tertiary Health Facility in Sokoto Metropolis Nigeria"
+title: "Socio-Demographic and Clinical Profile of Asthmatic Children as Seen in a Tertiary Health Facility in Sokoto Metropolis Nigeria"
 date: 2019-04-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Socio Demographic and Clinical Profile of Asthmatic Children as Seen in a Tertiary Health Facility in Sokoto Metropolis Nigeria"
+  title: "Socio-Demographic and Clinical Profile of Asthmatic Children as Seen in a Tertiary Health Facility in Sokoto Metropolis Nigeria"
   description: "World Journal of Biomedical Research"
   image:
 ---

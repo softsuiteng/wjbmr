@@ -11,7 +11,7 @@
 <!-- {{ $orderedArticles := ((((where $.Site.RegularPages "Section" "articles").ByParam "issue").Reverse.ByParam "volume")).ByParam "publishing.position" }}
 {{ $recent := first 5 $orderedArticles }} -->
 
-{{ $recent := (((((where $.Site.RegularPages "Section" "articles").ByParam "volume").Reverse.ByParam "issue"))) }} 
+{{ $recent := (((((where $.Site.RegularPages "Section" "Articles").ByParam "volume").Reverse.ByParam "issue"))) }} 
 {{ $recent := $recent | intersect (where .Site.RegularPages "Params.volume" $newestVolume) }} 
 {{ $recent := $recent | intersect (where .Site.RegularPages "Params.issue" $newestIssue) }} 
 {{ $recent := first 6 ($recent.ByParam "publishing.position") }} 
@@ -62,9 +62,9 @@
     </p>
     <a
       class="btn btn-outline-success text-uppercase"
-      href="/guidelines"
+      href="/instructions"
       title="Read submission guidelines"
-      >Submitting an article</a
+      >Instruction to Authors</a
     >
 
     <!-- Todo: Show recent news update here. -->

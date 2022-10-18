@@ -1,5 +1,5 @@
 {{ $issues := (where $.Site.RegularPages "Section" "published") }} 
-{{ $paginator := .Paginate $issues (or .Site.Params.paginate 10) }} 
+{{ $paginator := .Paginate $issues (or .Site.Params.paginate 6) }} 
 
 {{ partial "head.html" .  }} 
 
@@ -42,9 +42,9 @@
     </p>
     <a
       class="btn btn-outline-success text-uppercase"
-      href="/guidelines"
+      href="/instructions"
       title="Read submission guidelines"
-      >Submitting an Article</a
+      >Instruction to Authors</a
     >
 
     <h4>Browse Articles</h4>

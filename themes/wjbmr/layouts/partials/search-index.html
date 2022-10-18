@@ -2,22 +2,27 @@
 {{/*  {{ $publications := $publications | union (where .Site.Pages "Section" "publications") }}  */}}
 
 <script>
-  window.store = {
-      {{ range $publications }}
-      // For all pages in your site, use "range .Site.Pages"
-      // You can use any unique identifier here
-      "{{ .Permalink }}": {
-          // You can customize your searchable fields using any .Page parameters
-          "title": "{{ .Title  }}",
-          "section": "{{ .Section  }}",
-          "publication": "volume {{ .Params.volume  }}, issue {{ .Params.issue  }}",
-          "authors": [{{ range .Params.Authors }}" {{ (. | lower) | title }}",{{ end }}].join(' '),
-          "keywords": [{{ range .Params.Keywords }}" {{ . }}",{{ end }}].join(' '),
-          "content": {{ .Content | plainify }}, // Strip out HTML tags
-          "url": "{{ .Permalink }}"
-      },
-      {{ end }}
-  }
+    const lf = new Intl.ListFormat('en',{
+        style: 'short',
+        type: 'conjunction'
+    });
+
+    window.store = {
+        {{ range $publications }}
+        // For all pages in your site, use "range .Site.Pages"
+        // You can use any unique identifier here
+        "{{ .Permalink }}": {
+            // You can customize your searchable fields using any .Page parameters
+            "title": "{{ .Title  }}",
+            "section": "{{ .Section  }}",
+            "publication": "volume {{ .Params.volume  }}, issue {{ .Params.issue  }}",
+            "authors": lf.format([{{ range .Params.Authors }}"{{ . }}",{{ end }}]), 
+            "keywords": [{{ range .Params.Keywords }}" {{ . }}",{{ end }}].join(' '),
+            "content": {{ .Content | plainify }}, // Strip out HTML tags
+            "url": "{{ .Permalink }}"
+        },
+        {{ end }}
+    }
   </script>
   <!-- Include Lunr and code for your search function,
   which you'll write in the next section -->

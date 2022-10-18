@@ -1,5 +1,5 @@
 ---
-title: "Delayed Diagnosis and Specialist Referral:A Persisting Dilemma in Medical Practice a Case Report"
+title: "Delayed Diagnosis and Specialist Referral - A Persisting Dilemma in Medical Practice: A Case Report"
 date: 2015-09-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Delayed Diagnosis and Specialist Referral:A Persisting Dilemma in Medical Practice a Case Report"
+  title: "Delayed Diagnosis and Specialist Referral - A Persisting Dilemma in Medical Practice: A Case Report"
   description: "World Journal of Biomedical Research"
   image:
 ---

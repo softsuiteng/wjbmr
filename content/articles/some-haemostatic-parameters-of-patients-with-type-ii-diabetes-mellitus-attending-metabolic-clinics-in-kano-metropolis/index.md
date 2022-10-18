@@ -1,5 +1,5 @@
 ---
-title: "Some Haemostatic Parameters of Patients With Type Ii Diabetes Mellitus Attending Metabolic Clinics in Kano Metropolis"
+title: "Some Haemostatic Parameters of Patients With Type-II Diabetes Mellitus Attending Metabolic Clinics in Kano Metropolis"
 date: 2021-04-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Some Haemostatic Parameters of Patients With Type Ii Diabetes Mellitus Attending Metabolic Clinics in Kano Metropolis"
+  title: "Some Haemostatic Parameters of Patients With Type-II Diabetes Mellitus Attending Metabolic Clinics in Kano Metropolis"
   description: "World Journal of Biomedical Research"
   image:
 ---

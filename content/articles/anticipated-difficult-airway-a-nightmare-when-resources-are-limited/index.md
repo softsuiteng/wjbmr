@@ -1,11 +1,11 @@
 ---
-title: "Anticipated Difficult Airway a Nightmare When Resources Are Limited"
+title: "Anticipated Difficult Airway: A Nightmare When Resources Are Limited"
 date: 2019-04-15T10:00:00+01:00
 draft: false
 
 section: "Articles"
 categories: ["Journal Article"]
-authors: ["Etta O,Eyo C, Udeme N"]
+authors: ["Etta O", "Eyo C", "Udeme N"]
 keywords: ["Anticipated difficult airway", "resource poor setting"]
 
 outputs: 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Anticipated Difficult Airway a Nightmare When Resources Are Limited"
+  title: "Anticipated Difficult Airway: A Nightmare When Resources Are Limited"
   description: "World Journal of Biomedical Research"
   image:
 ---

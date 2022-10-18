@@ -76,20 +76,10 @@
     {{ end }}
 
     <h4>Referencing</h4>
-    <h5>Online</h5>
     <p class="reference web">
-      {{ partial "article/authors-apa.html" . }} ({{ .Params.publishing.year }},
-      {{ .Params.publishing.month }} 15). {{ .Title }}. wjbmr. {{ .Permalink
+      {{ partial "article/authors-vancouver.html" . }} {{ .Title }}. 
+      Nigeria: World Journal of Biomedical Research [Internet]. {{ .Params.publishing.year }} {{ substr .Params.publishing.month 0 3 | title }}; {{ .Params.volume }}({{ .Params.issue }}):{{ .Params.publishing.pages }}. Available from {{ .Permalink
       }}
-    </p>
-    <h5>Print</h5>
-    <p class="reference print">
-      {{ partial "article/authors-apa.html" . }} ({{ .Params.publishing.year
-      }}). {{ .Title }}. wjbmr.
-      <em>{{ .Params.volume }}</em>({{ .Params.issue }}), {{
-      .Params.publishing.pages }} {{ with .Params.doi }}
-      <a href="{{ . }}" title="{{ . }}" target="_blank">{{.}}</a>
-      {{ end }}
     </p>
 
     <h4>Share article</h4>

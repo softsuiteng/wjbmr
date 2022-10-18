@@ -6,7 +6,7 @@ draft: false
 section: "Articles"
 categories: ["Journal Article"]
 authors: ["Oboh OE" , "Adayonfo EO" , "Lasebikan NN", "Asuzu CC" , "Salako O"]
-keywords: ["Anxiety, depression, caregivers, cancer, Nigeria"]
+keywords: ["Anxiety", "depression", "caregivers", "cancer", "Nigeria"]
 
 outputs: 
 - html

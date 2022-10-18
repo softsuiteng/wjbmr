@@ -1,5 +1,5 @@
 ---
-title: "Pattern and Outcome of Childhood Respiratory Diseases Admissions at a Specialist Hospital in Gusau North Western Nigeria a Four Year Review"
+title: "Pattern and Outcome of Childhood Respiratory Diseases Admissions at a Specialist Hospital in Gusau North Western Nigeria: A Four Year Review"
 date: 2018-09-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Pattern and Outcome of Childhood Respiratory Diseases Admissions at a Specialist Hospital in Gusau North Western Nigeria a Four Year Review"
+  title: "Pattern and Outcome of Childhood Respiratory Diseases Admissions at a Specialist Hospital in Gusau North Western Nigeria: A Four Year Review"
   description: "World Journal of Biomedical Research"
   image:
 ---

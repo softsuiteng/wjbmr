@@ -1,5 +1,5 @@
 ---
-title: "Corrosive Induced Pyloric Obstruction With Oesophageal Sparing a Case Report"
+title: "Corrosive Induced Pyloric Obstruction With Oesophageal Sparing: A Case Report"
 date: 2016-09-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Corrosive Induced Pyloric Obstruction With Oesophageal Sparing a Case Report"
+  title: "Corrosive Induced Pyloric Obstruction With Oesophageal Sparing: A Case Report"
   description: "World Journal of Biomedical Research"
   image:
 ---

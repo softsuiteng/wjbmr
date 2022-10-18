@@ -1,5 +1,5 @@
 ---
-title: "A Joint to Remember a Case Series of Sternoclavicular Joint Swelling in Nigeria"
+title: "A Joint to Remember: A Case Series of Sternoclavicular Joint Swelling in Nigeria"
 date: 2018-09-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "A Joint to Remember a Case Series of Sternoclavicular Joint Swelling in Nigeria"
+  title: "A Joint to Remember: A Case Series of Sternoclavicular Joint Swelling in Nigeria"
   description: "World Journal of Biomedical Research"
   image:
 ---

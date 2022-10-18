@@ -1,5 +1,5 @@
 ---
-title: "Anaesthesia and the Prone Position a Case Report and Review of Literature"
+title: "Anaesthesia and the Prone Position: A Case Report and Review of Literature"
 date: 2016-04-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Anaesthesia and the Prone Position a Case Report and Review of Literature"
+  title: "Anaesthesia and the Prone Position: A Case Report and Review of Literature"
   description: "World Journal of Biomedical Research"
   image:
 ---

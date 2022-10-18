@@ -43,14 +43,14 @@ All manuscripts must be in English. They must be typed on A4 paper size page, do
 
 ### Submission of Manuscripts
 
-Manuscripts should be prepared in Microsoft word format and submitted on-line here or by e-mail attachment to wjbmr2014@gmail.com and link to journal website: www.wjbmr.org. Promotion/marketing editor
-Promotion/marketing editor
-World journal of biomedical research
-Faculty of clinical sciences
-University of Uyo
-P.M.B1017.uyo, Nigeria
-E-mail: wjbmr2014@gmail.com
-Tel: 08033032191
+Manuscripts should be prepared in Microsoft word format and submitted by e-mail attachment to wjbmr2014@gmail.com and link to journal website: www.wjbmr.org.
+
+>**Promotion/Marketing Editor**\
+>World Journal of Biomedical Research\
+>Faculty of clinical sciences, University of Uyo\
+>P.M.B1017. Uyo, Nigeria\
+>E-mail: wjbmr2014@gmail.com\
+>Tel: 08033032191
 
 ### Publication Schedule
 

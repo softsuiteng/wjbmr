@@ -1,0 +1,20 @@
+{{ $authorsLen := len .Params.authors }}
+
+{{ with .Params.authors }}      
+  {{ if ge $authorsLen 2 }}
+      <span>   
+          {{ range first (sub $authorsLen 1) . }}            
+            {{ . }},
+          {{ end }}
+
+          {{ range last 1 . }} 
+            {{ . }}
+          {{ end }}
+      </span>
+  {{ else }}       
+    {{ range . }} 
+        {{ . }}
+    {{ end }}
+  {{ end }}
+{{ end }}   
+  

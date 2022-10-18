@@ -1,12 +1,12 @@
 ---
-title: "Perception and Practice of Home Embalming by Residents in Uyo City of Niger Delta Region of Nigeria"
+title: "Perception and Practice of Home Embalming by Residents in Uyo City of Niger-Delta Region of Nigeria"
 date: 2015-04-15T10:00:00+01:00
 draft: false
 
 section: "Articles"
 categories: ["Journal Article"]
-authors: [""]
-keywords: [""]
+authors: ["Abudu EK", "Akinbami OS"]
+keywords: ["Perception", "Practice", "Home Embalming", "Uyo City", "Niger-Delta Region", "Nigeria"]
 
 outputs: 
 - html
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Perception and Practice of Home Embalming by Residents in Uyo City of Niger Delta Region of Nigeria"
+  title: "Perception and Practice of Home Embalming by Residents in Uyo City of Niger-Delta Region of Nigeria"
   description: "World Journal of Biomedical Research"
   image:
 ---

@@ -5,7 +5,7 @@ draft: false
 
 section: "Articles"
 categories: ["Journal Article"]
-authors: ["Akinjogunla OJ" , "Ekuma AE" , "Adaka", "FN" , "Udeson AS"]
+authors: ["Akinjogunla OJ" , "Ekuma AE" , "Adaka FN", "Udeson AS"]
 keywords: ["Clindamycin", "Erythromycin", "Inducible", "Staphylococcus", "Virulence"]
 
 outputs: 

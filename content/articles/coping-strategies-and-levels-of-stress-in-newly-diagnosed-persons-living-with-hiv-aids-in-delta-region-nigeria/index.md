@@ -1,5 +1,5 @@
 ---
-title: "Coping Strategies and Levels of Stress in Newly Diagnosed Persons Living With Hiv Aids in Delta Region Nigeria"
+title: "Coping Strategies and Levels of Stress in Newly Diagnosed Persons Living With HIV/AIDS in Delta Region Nigeria"
 date: 2014-04-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Coping Strategies and Levels of Stress in Newly Diagnosed Persons Living With Hiv Aids in Delta Region Nigeria"
+  title: "Coping Strategies and Levels of Stress in Newly Diagnosed Persons Living With HIV/AIDS in Delta Region Nigeria"
   description: "World Journal of Biomedical Research"
   image:
 ---

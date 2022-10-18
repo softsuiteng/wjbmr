@@ -1,5 +1,5 @@
 ---
-title: "Socio Demographic Determinants of Patients Accessing Free Cataract Surgical Services in Uyo Nigeria"
+title: "Socio-Demographic Determinants of Patients Accessing Free Cataract Surgical Services in Uyo Nigeria"
 date: 2017-04-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Socio Demographic Determinants of Patients Accessing Free Cataract Surgical Services in Uyo Nigeria"
+  title: "Socio-Demographic Determinants of Patients Accessing Free Cataract Surgical Services in Uyo Nigeria"
   description: "World Journal of Biomedical Research"
   image:
 ---

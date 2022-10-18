@@ -1,5 +1,5 @@
 ---
-title: "A Comparative Study of Angiotensin Converting Enzyme Concentration in Hypertensive and Non Hypertensive Adults With Type 2 Diabetes in South South Nigeria"
+title: "A Comparative Study of Angiotensin Converting Enzyme Concentration in Hypertensive and Non Hypertensive Adults With Type-2 Diabetes in South South Nigeria"
 date: 2018-09-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "A Comparative Study of Angiotensin Converting Enzyme Concentration in Hypertensive and Non Hypertensive Adults With Type 2 Diabetes in South South Nigeria"
+  title: "A Comparative Study of Angiotensin Converting Enzyme Concentration in Hypertensive and Non Hypertensive Adults With Type-2 Diabetes in South South Nigeria"
   description: "World Journal of Biomedical Research"
   image:
 ---

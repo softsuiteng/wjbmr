@@ -18,7 +18,7 @@ issue: 1
 
 publishing:
   position: 9
-  pages: "32"
+  pages: "32-37"
   month: "April"
   year: 2014
 

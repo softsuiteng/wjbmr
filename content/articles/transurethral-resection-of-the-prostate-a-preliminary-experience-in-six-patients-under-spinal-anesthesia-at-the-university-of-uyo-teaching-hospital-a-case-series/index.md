@@ -1,5 +1,5 @@
 ---
-title: "Transurethral Resection of the Prostate a Preliminary Experience in Six Patients Under Spinal Anesthesia at the University of Uyo Teaching Hospital a Case Series"
+title: "Transurethral Resection of the Prostate a Preliminary Experience in Six Patients Under Spinal Anesthesia at the University of Uyo Teaching Hospital: A Case Series"
 date: 2016-09-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Transurethral Resection of the Prostate a Preliminary Experience in Six Patients Under Spinal Anesthesia at the University of Uyo Teaching Hospital a Case Series"
+  title: "Transurethral Resection of the Prostate a Preliminary Experience in Six Patients Under Spinal Anesthesia at the University of Uyo Teaching Hospital: A Case Series"
   description: "World Journal of Biomedical Research"
   image:
 ---

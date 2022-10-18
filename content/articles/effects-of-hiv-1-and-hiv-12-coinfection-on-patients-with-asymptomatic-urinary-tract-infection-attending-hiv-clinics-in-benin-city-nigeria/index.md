@@ -1,5 +1,5 @@
 ---
-title: "Effects of Hiv 1 and Hiv 1/2 Coinfection on Patients With Asymptomatic Urinary Tract Infection Attending Hiv Clinics in Benin City Nigeria"
+title: "Effects of HIV-1 and HIV-1/2 Coinfection on Patients With Asymptomatic Urinary Tract Infection Attending HIV  Clinics in Benin City Nigeria"
 date: 2018-04-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Effects of Hiv 1 and Hiv 12 Coinfection on Patients With Asymptomatic Urinary Tract Infection Attending Hiv Clinics in Benin City Nigeria"
+  title: "Effects of HIV-1 and HIV-1/2 Coinfection on Patients With Asymptomatic Urinary Tract Infection Attending HIV Clinics in Benin City Nigeria"
   description: "World Journal of Biomedical Research"
   image:
 ---

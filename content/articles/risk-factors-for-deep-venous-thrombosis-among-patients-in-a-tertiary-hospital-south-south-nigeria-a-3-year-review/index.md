@@ -1,5 +1,5 @@
 ---
-title: "Risk Factors for Deep Venous Thrombosis Among Patients in a Tertiary Hospital South South Nigeria:A 3 Year Review"
+title: "Risk Factors for Deep Venous Thrombosis Among Patients in a Tertiary Hospital South South Nigeria: A 3-Year Review"
 date: 2014-04-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Risk Factors for Deep Venous Thrombosis Among Patients in a Tertiary Hospital South South Nigeria a 3 Year Review"
+  title: "Risk Factors for Deep Venous Thrombosis Among Patients in a Tertiary Hospital South South Nigeria: A 3-Year Review"
   description: "World Journal of Biomedical Research"
   image:
 ---

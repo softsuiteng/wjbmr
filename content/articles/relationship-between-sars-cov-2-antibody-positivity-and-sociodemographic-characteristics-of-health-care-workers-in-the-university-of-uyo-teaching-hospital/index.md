@@ -1,5 +1,5 @@
 ---
-title: "Relationship Between Sars Cov 2 Antibody Positivity and Sociodemographic Characteristics of Health Care Workers in the University of Uyo Teaching Hospital"
+title: "Relationship Between SARS-CoV-2 Antibody Positivity and Sociodemographic Characteristics of Health Care Workers in the University of Uyo Teaching Hospital"
 date: 2021-04-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Relationship Between Sars Cov 2 Antibody Positivity and Sociodemographic Characteristics of Health Care Workers in the University of Uyo Teaching Hospital"
+  title: "Relationship Between SARS-CoV-2 Antibody Positivity and Sociodemographic Characteristics of Health Care Workers in the University of Uyo Teaching Hospital"
   description: "World Journal of Biomedical Research"
   image:
 ---
