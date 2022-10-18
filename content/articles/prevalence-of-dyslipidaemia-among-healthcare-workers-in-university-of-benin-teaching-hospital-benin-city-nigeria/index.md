@@ -18,7 +18,7 @@ issue: 1
 
 publishing:
   position: 2
-  pages: "0-10"
+  pages: "6-13"
   month: "April"
   year: 2018
 
