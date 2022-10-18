@@ -1,5 +1,5 @@
-{{ $newestVolume := 9 }}
-{{ $newestIssue := 1 }}
+{{ $newestVolume := 3 }}
+{{ $newestIssue := 2 }}
 
 {{ $recent := (((((where $.Site.RegularPages "Section" "articles").ByParam "volume").Reverse.ByParam "issue"))) }}  
 {{ $recent := $recent | intersect (where .Site.RegularPages "Params.volume" $newestVolume) }} 
