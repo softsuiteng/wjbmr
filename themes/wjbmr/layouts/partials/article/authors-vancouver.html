@@ -2,18 +2,15 @@
 
 {{ with .Params.authors }}      
   {{ if ge $authorsLen 2 }}
-      <span>   
-          {{ range first (sub $authorsLen 1) . }}            
-            {{ . }},
-          {{ end }}
-
-          {{ range last 1 . }} 
-            {{ . }}
-          {{ end }}
-      </span>
+    {{ range first (sub $authorsLen 1) . }}            
+      {{ . }},
+    {{ end }}
+    {{ range last 1 . }} 
+      {{ . }}.
+    {{ end }}
   {{ else }}       
     {{ range . }} 
-        {{ . }}
+        {{ . }}.
     {{ end }}
   {{ end }}
 {{ end }}   

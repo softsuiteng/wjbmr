@@ -254,7 +254,7 @@ footer .copyright { text-align: right; }
 
 .article_page .meta .item + .item { margin-top: 0.4em; }
 
-.article_page .reference { font-size: 0.8em; line-height: 1.6; text-indent: -1.5em; margin-left: 1.5em; }
+.article_page .reference { font-size: 0.8em; line-height: 1.6; text-indent: -0.5em; margin-left: 0.5em; }
 
 @media screen and (max-width: 576px) { .article_page { flex-wrap: wrap; flex-direction: column; }
   .article_page article { width: 100%; margin-right: 0; padding-right: 0; border-right: none; }
@@ -390,7 +390,7 @@ footer .copyright { text-align: right; }
 
 .scroll-up .navigation { position: fixed; width: 100%; top: 0; transition: all 400ms ease-in-out; }
 
-@media (max-width: 576px) { .banner { padding: 2em 1em 1em; }
+@media (max-width: 576px) { .banner { padding: 3em 1.5em 2em; }
   .banner img { height: 75px; }
   .banner h2 { font-size: 1.33rem; }
   .issn { display: none; } }

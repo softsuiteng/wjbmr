@@ -950,8 +950,8 @@ footer {
   .reference {
     font-size: 0.8em;
     line-height: 1.6;
-    text-indent: -1.5em; 
-    margin-left: 1.5em; 
+    text-indent: -0.5em; 
+    margin-left: 0.5em; 
   }
 }
 
@@ -1422,7 +1422,7 @@ $blue: #1b0569;
 
  @media (max-width: $breakpoint-sm) { 
   .banner {
-    padding: 2em 1em 1em;
+    padding: 3em 1.5em 2em;
 
 
     img {
