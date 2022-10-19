@@ -6,14 +6,14 @@ draft: false
 volume: 7
 issue: 1
 
-preliminary: "aksujomas_05_01.pdf" 
+preliminary: "wjbmr_07_01.pdf" 
 
 social:
   card: "summary"
-  site: "@aksujomas"
-  creator: "@aksujomas" 
-  title: "Volume 5, Number 1 (June, 2020)"
-  description: "AKSU Journal of Management Sciences"
+  site: "@wjbmr"
+  creator: "@wjbmr" 
+  title: "Volume 7, Number 1 (April, 2020)"
+  description: "World Journal of Biomedical Research"
   image: 
 ---
 

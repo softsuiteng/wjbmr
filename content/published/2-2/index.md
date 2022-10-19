@@ -6,14 +6,14 @@ draft: false
 volume: 2
 issue: 2
 
-preliminary: "aksujomas_02_02.pdf" 
+preliminary: "wjbmr_02_02.pdf" 
 
 social:
   card: "summary"
-  site: "@aksujomas"
-  creator: "@aksujomas"
-  title: "Volume 2, Number 2 (December, 2017)"
-  description: "AKSU Journal of Management Sciences"
+  site: "@wjbmr"
+  creator: "@wjbmr"
+  title: "Volume 2, Number 2 (September, 2015)"
+  description: "World Journal of Biomedical Research"
   image:
 ---
 

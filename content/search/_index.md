@@ -9,9 +9,9 @@ outputs:
 
 social:
   card: "summary"
-  site: "@aksujomas"
-  creator: "@aksujomas"
-  title: "AKSU Journal of Management Sciences"
+  site: "@wjbmr"
+  creator: "@wjbmr"
+  title: "World Journal of Biomedical Research"
   description: "Search"
   image: "search.jpg"
 ---

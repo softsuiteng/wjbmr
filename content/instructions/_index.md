@@ -12,7 +12,7 @@ social:
   site: "@wjbmr"
   creator: "@wjbmr"
   title: "Instruction to Authors"
-  description: "AKSU Journal of Management Sciences"
+  description: "World Journal of Biomedical Research"
 ---
 
 <!-- ## Call for paper

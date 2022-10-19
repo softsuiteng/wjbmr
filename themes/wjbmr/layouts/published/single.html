@@ -1,5 +1,5 @@
-{{ $newestVolume := 6 }}
-{{ $newestIssue := "1&2" }}
+{{ $newestVolume := 9 }}
+{{ $newestIssue := 1 }}
 
 {{ $baseurl := .Site.BaseURL }} 
 {{ $title := humanize .Title | title }} 
@@ -8,13 +8,11 @@
 {{ $issueArticles := $allArticles | intersect (where .Site.RegularPages "Params.issue" "==" .Params.issue) }} 
 {{ $paginator := .Paginate $issueArticles (or .Site.Params.paginate 5) }}
 
-<!-- {{ $orderedArticles := ((((where $.Site.RegularPages "Section" "articles").ByParam "issue").Reverse.ByParam "volume")).ByParam "publishing.position" }}
-{{ $recent := first 5 $orderedArticles }} -->
-
-{{ $recent := (((((where $.Site.RegularPages "Section" "Articles").ByParam "volume").Reverse.ByParam "issue"))) }} 
+{{/*  Most Recent Issues  */}}
+{{ $recent := (((((where $.Site.RegularPages "Section" "articles").ByParam "volume").Reverse.ByParam "issue"))) }}  
 {{ $recent := $recent | intersect (where .Site.RegularPages "Params.volume" $newestVolume) }} 
 {{ $recent := $recent | intersect (where .Site.RegularPages "Params.issue" $newestIssue) }} 
-{{ $recent := first 6 ($recent.ByParam "publishing.position") }} 
+{{ $recent := first 5 ($recent.ByParam "publishing.position") }} 
 
 {{ partial "head.html" . }} 
 {{ partial "header.html" . }}
@@ -67,10 +65,7 @@
       >Instruction to Authors</a
     >
 
-    <!-- Todo: Show recent news update here. -->
-    <!-- <h4>News Update</h4> -->
-
-    {{ if and (ne .Params.volume $newestVolume) (ne .Params.issue $newestIssue) }}
+    {{ if not (and (eq .Params.volume $newestVolume) (eq .Params.issue $newestIssue)) }}
 
     <h4>Newest Articles</h4>
     <div class="articles">

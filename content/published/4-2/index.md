@@ -10,14 +10,14 @@ outputs:
 volume: 4
 issue: 2
 
-# preliminary: "aksujomas_01_02.pdf" 
+# preliminary: "wjbmr_01_02.pdf" 
 
 social:
   card: "summary"
-  site: "@aksujomas"
-  creator: "@aksujomas"
-  title: "Volume 4, Number 2 (December, 2019)"
-  description: "AKSU Journal of Management Sciences"
+  site: "@wjbmr"
+  creator: "@wjbmr"
+  title: "Volume 4, Number 2 (September, 2017)"
+  description: "World Journal of Biomedical Research"
   image: "4-2.jpg"
 ---
 

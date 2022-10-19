@@ -36,7 +36,7 @@ social:
 Colonic diverticulosis refers to blow-outs or herniations of mucosa and submucosa which occur through the
 points of weakness of the colon. It occurs commonly in humans living in the western world. It is rare in rural
 Africa and Asia. We reviewed cases of colonic diverticulosis seen at general surgery unit of University of Uyo
-Teaching Hospital from July, 2008 to June, 2016. This was a hospital based retrospective study designed to
+Teaching Hospital from July, 2008 to April, 2016. This was a hospital based retrospective study designed to
 analyze the presentation, management and outcome of adult patients found with colonic diverticulosis over the
 eight year period. The patients' records were retrieved and descriptive analysis of the data done. Ten patients
 with colonic diverticular disease presented during the eight-year period. The age range was 48 to 85 years, with

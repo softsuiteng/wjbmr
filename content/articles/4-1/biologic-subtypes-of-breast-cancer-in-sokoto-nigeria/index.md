@@ -40,7 +40,7 @@ centre has also witnessed a rising trend in the incidence of breast cancer, not 
 elucidate the molecular biology of the disease. This study was therefore undertaken to determine the
 predominant receptor status of breast cancer among patients in Sokoto, North-western Nigeria. A one year
 retrospective study in which the case note of patients with histologically confirmed diagnosis of breast cancer
-between January and December, 2015 were reviewed. Parameters studied included demographic
+between January and September, 2015 were reviewed. Parameters studied included demographic
 characteristics and receptor status of biopsy specimens. Atotal of forty six patients were seen in this study and
 all were females. The age range was 25-75 years. The mean age was 44.65 years. The median age was 45.00
 years while modal age was 35.00 years. Seventy two percent (33) of the women with breast cancer were premenopausal while 28.26% (13) were post-menopausal. Immunohistochemical analysis shows that 47.8% (22)
