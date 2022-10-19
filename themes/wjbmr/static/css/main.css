@@ -392,5 +392,6 @@ footer .copyright { text-align: right; }
 
 @media (max-width: 576px) { .banner { padding: 2em 1em 1em; }
   .banner img { height: 75px; }
-  .banner h2 { font-size: 1.33rem; } }
+  .banner h2 { font-size: 1.33rem; }
+  .issn { display: none; } }
 /*# sourceMappingURL=main.css.map */
