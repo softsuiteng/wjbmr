@@ -6,7 +6,7 @@ draft: false
 volume: 2
 issue: 2
 
-preliminary: "wjbmr_02_02.pdf" 
+# preliminary: "wjbmr_02_02.pdf" 
 
 social:
   card: "summary"
