@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://wjbmr.netlify.app/'
 title = 'World Journal of Biomedical Research'
 languageCode = 'en-us'
 relativeURLs =  true
