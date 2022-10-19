@@ -24,7 +24,7 @@ publishing:
   year: 2022
 
 file: "wjbmr_09_01_01.pdf" # volume_issue_position
-image: "wjbmr_06_01_01.jpg" # volume_issue_position
+image: "wjbmr_09_01_01.jpg" # volume_issue_position
 
 social:
   card: "summary"
