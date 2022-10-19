@@ -6,11 +6,11 @@
     <meta charset="utf-8" />
     <meta name="description" content="{{ if eq .Description "" }}{{ .Params.title }}{{ else }}{{ .Description }}{{ end }}">
     
-    {{- with $.Param "keywords" }} <meta name="keywords" content="{{ delimit . "," }}"> {{- end }}
+    <meta name="keywords" content="softsuite,solutions,software,development,{{- with $.Param "keywords" }}{{ delimit . "," }}{{- end }}"> 
 
     <!-- Fix for index page -->
     {{- with $.Param "pointwords" }} 
-    <meta name="keywords" content="{{ delimit .    "," }}"> 
+    <meta name="keywords" content="{{ delimit . "," }}"> 
     {{- end }}
     
     {{- with $.Param "authors" }} 

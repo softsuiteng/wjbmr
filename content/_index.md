@@ -19,6 +19,6 @@ social:
 
 ### Subscription
 
-World Journal of Biomedical Research is published bi-annualy by the Faculty of Clinical Sciences, University of Uyo, Nigeria. The 2022 subscription price is N1000/copy, N2000/ issue (Nigerian Institutions), rest of Africa US $50/ issue, the rest of the world US$100/issue including postage fee.
+World Journal of Biomedical Research is published bi-annualy by the Faculty of Clinical Sciences, University of Uyo, Nigeria. The 2022 subscription price is N1000/copy, N2000/issue (Nigerian Institutions), rest of Africa US$50/issue, the rest of the world US$100/issue including postage fee.
 
 Journals are dispatched within Nigeria by surface mail and to the rest of Africa and other continents by various forms of air speeded delivery.
