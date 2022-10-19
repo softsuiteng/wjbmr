@@ -1,5 +1,5 @@
 ---
-title: "Recommended-the Use of Trauma Patients Presenting to an Accident and Emergency for the Nigeria National Seroprevalence Survey"
+title: "Recommended - The Use of Trauma Patients Presenting to an Accident and Emergency for the Nigeria National Seroprevalence Survey"
 date: 2015-04-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Recommended-the Use of Trauma Patients Presenting to an Accident and Emergency for the Nigeria National Seroprevalence Survey"
+  title: "Recommended - The Use of Trauma Patients Presenting to an Accident and Emergency for the Nigeria National Seroprevalence Survey"
   description: "World Journal of Biomedical Research"
   image:
 ---
