@@ -5,7 +5,7 @@ draft: false
 
 section: "Articles"
 categories: ["Journal Article"]
-authors: ["Ekanem", "AM", "Johnson","OE Akwaowo", "CD and Motilewa", OO]
+authors: ["Ekanem AM", "Johnson OE", "Akwaowo CD", "Motilewa OO"]
 keywords: ["Umblical cord", "care practices", "mothers", "Uyo"]
 
 outputs: 

@@ -17,7 +17,7 @@ social:
 
 <!-- ## Call for paper
 
-wjbmr is _**now receiving submissions**_ for the next issue of our Journal (Volume 2, Issue 2). Submission of manuscripts for peer review is expected on or before July 31, 2022. -->
+wjbmr is _**now receiving submissions**_ for the next issue of our Journal (Volume 2, Number 2). Submission of manuscripts for peer review is expected on or before July 31, 2022. -->
 
 ## Instruction to Authors
 

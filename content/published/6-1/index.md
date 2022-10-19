@@ -1,5 +1,5 @@
 ---
-title: "Volume 6, Issue 1"
+title: "Volume 6, Number 1"
 date: 2019-04-15T10:00:00+01:00
 draft: false
 
@@ -12,7 +12,7 @@ social:
   card: "summary"
   site: "@aksujomas"
   creator: "@aksujomas" 
-  title: "Volume 5, Issue 1 (June, 2020)"
+  title: "Volume 5, Number 1 (June, 2020)"
   description: "AKSU Journal of Management Sciences"
   image: 
 ---
