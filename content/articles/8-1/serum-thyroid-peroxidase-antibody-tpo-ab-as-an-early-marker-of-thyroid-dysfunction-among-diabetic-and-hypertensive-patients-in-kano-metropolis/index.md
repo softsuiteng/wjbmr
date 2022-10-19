@@ -1,5 +1,5 @@
 ---
-title: "Serum Thyroid Peroxidase Antibody Tpo Ab as an Early Marker of Thyroid Dysfunction Among Diabetic and Hypertensive Patients in Kano Metropolis"
+title: "Serum Thyroid Peroxidase Antibody (Tpo-Ab) as an Early Marker of Thyroid Dysfunction Among Diabetic and Hypertensive Patients in Kano Metropolis"
 date: 2021-04-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Serum Thyroid Peroxidase Antibody Tpo Ab as an Early Marker of Thyroid Dysfunction Among Diabetic and Hypertensive Patients in Kano Metropolis"
+  title: "Serum Thyroid Peroxidase Antibody (Tpo-Ab) as an Early Marker of Thyroid Dysfunction Among Diabetic and Hypertensive Patients in Kano Metropolis"
   description: "World Journal of Biomedical Research"
   image:
 ---

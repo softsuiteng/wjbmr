@@ -1,5 +1,5 @@
 ---
-title: "Delayed Wound Healing a Focus on Bacterial Intracellular Proteases in Diabetic Wound Ulcers"
+title: "Delayed Wound Healing: A Focus on Bacterial Intracellular Proteases in Diabetic Wound Ulcers"
 date: 2021-09-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Delayed Wound Healing a Focus on Bacterial Intracellular Proteases in Diabetic Wound Ulcers"
+  title: "Delayed Wound Healing: A Focus on Bacterial Intracellular Proteases in Diabetic Wound Ulcers"
   description: "World Journal of Biomedical Research"
   image:
 ---

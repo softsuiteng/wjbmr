@@ -1,5 +1,5 @@
 ---
-title: "Interhospital Transport of the Critically Ill Patient the University of Uyo Teaching Hospital Experience"
+title: "Interhospital Transport of the Critically Ill Patient: The University of Uyo Teaching Hospital Experience"
 date: 2016-09-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Interhospital Transport of the Critically Ill Patient the University of Uyo Teaching Hospital Experience"
+  title: "Interhospital Transport of the Critically Ill Patient: The University of Uyo Teaching Hospital Experience"
   description: "World Journal of Biomedical Research"
   image:
 ---

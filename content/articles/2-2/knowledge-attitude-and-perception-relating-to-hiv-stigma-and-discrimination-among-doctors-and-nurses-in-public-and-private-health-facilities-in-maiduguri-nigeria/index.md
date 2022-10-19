@@ -1,5 +1,5 @@
 ---
-title: "Knowledge Attitude and Perception Relating to Hiv Stigma and Discrimination Among Doctors and Nurses in Public and Private Health Facilities in Maiduguri Nigeria"
+title: "Knowledge, Attitude and Perception Relating to HIV Stigma and Discrimination Among Doctors and Nurses in Public and Private Health Facilities in Maiduguri, Nigeria"
 date: 2015-09-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Knowledge Attitude and Perception Relating to Hiv Stigma and Discrimination Among Doctors and Nurses in Public and Private Health Facilities in Maiduguri Nigeria"
+  title: "Knowledge, Attitude and Perception Relating to HIV Stigma and Discrimination Among Doctors and Nurses in Public and Private Health Facilities in Maiduguri, Nigeria"
   description: "World Journal of Biomedical Research"
   image:
 ---

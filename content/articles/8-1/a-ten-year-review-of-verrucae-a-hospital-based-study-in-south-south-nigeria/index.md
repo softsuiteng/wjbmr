@@ -1,5 +1,5 @@
 ---
-title: "A Ten Year Review of Verrucae a Hospital Based Study in South South Nigeria"
+title: "A Ten Year Review of Verrucae: A Hospital-Based Study in South-South Nigeria"
 date: 2021-04-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "A Ten Year Review of Verrucae a Hospital Based Study in South South Nigeria"
+  title: "A Ten Year Review of Verrucae: A Hospital-Based Study in South-South Nigeria"
   description: "World Journal of Biomedical Research"
   image:
 ---

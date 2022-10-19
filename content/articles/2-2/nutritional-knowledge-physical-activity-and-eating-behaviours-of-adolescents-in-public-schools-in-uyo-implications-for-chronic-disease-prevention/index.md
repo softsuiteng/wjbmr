@@ -1,5 +1,5 @@
 ---
-title: "Nutritional Knowledge Physical Activity and Eating Behaviours of Adolescents in Public Schools in Uyo Implications for Chronic Disease Prevention"
+title: "Nutritional Knowledge, Physical Activity and Eating Behaviours of Adolescents in Public Schools in Uyo; Implications for Chronic Disease Prevention"
 date: 2015-09-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Nutritional Knowledge Physical Activity and Eating Behaviours of Adolescents in Public Schools in Uyo Implications for Chronic Disease Prevention"
+  title: "Nutritional Knowledge, Physical Activity and Eating Behaviours of Adolescents in Public Schools in Uyo; Implications for Chronic Disease Prevention"
   description: "World Journal of Biomedical Research"
   image:
 ---

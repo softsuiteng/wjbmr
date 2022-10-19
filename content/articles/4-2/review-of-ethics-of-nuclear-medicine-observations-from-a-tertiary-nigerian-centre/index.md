@@ -1,5 +1,5 @@
 ---
-title: "Review of Ethics of Nuclear Medicine Observations From a Tertiary Nigerian Centre"
+title: "Review of Ethics of Nuclear Medicine: Observations From a Tertiary Nigerian Centre"
 date: 2017-09-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Review of Ethics of Nuclear Medicine Observations From a Tertiary Nigerian Centre"
+  title: "Review of Ethics of Nuclear Medicine: Observations From a Tertiary Nigerian Centre"
   description: "World Journal of Biomedical Research"
   image:
 ---

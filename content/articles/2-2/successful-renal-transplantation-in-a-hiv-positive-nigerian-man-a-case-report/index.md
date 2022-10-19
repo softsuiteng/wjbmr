@@ -1,5 +1,5 @@
 ---
-title: "Successful Renal Transplantation in a Hiv Positive Nigerian Man: A Case Report"
+title: "Successful Renal Transplantation in a HIV Positive Nigerian Man: A Case Report"
 date: 2015-09-15T10:00:00+01:00
 draft: false
 
@@ -29,7 +29,7 @@ social:
   card: "summary"
   site: "@wjbmr"
   creator: "@wjbmr"
-  title: "Successful Renal Transplantation in a Hiv Positive Nigerian Man: A Case Report"
+  title: "Successful Renal Transplantation in a HIV Positive Nigerian Man: A Case Report"
   description: "World Journal of Biomedical Research"
   image:
 ---
